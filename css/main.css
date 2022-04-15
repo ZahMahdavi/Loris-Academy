@@ -290,6 +290,102 @@ overflow: hidden;
     height: 3rem;
     border-radius: 0.25rem;    
   }
+
+/* about-us section */
+.about-us{
+  margin: 7rem auto;
+}
+
+  .img-box-about-us{
+    position: relative;
+  }
+
+  .text-box-about-us{
+    width: 213px;
+    height: 223px;
+    background-color:#9164E8;
+    border-radius: 6px;
+    display: inline-block;
+    align-items: center;
+    position: absolute;
+    z-index: 10000;
+  }
+  .text-box-about-us p{
+    font: 24px/38px yekanbold;
+    color: #FAFAFA;
+    text-align: right;
+    padding:3rem 1.626rem 3rem 2.5rem;
+    margin: 0;
+  }
+  .img-box-about-us img:nth-child(2){
+    position: absolute;
+    top: 0.8125rem;
+    left: 19px;;
+    z-index: 10;
+  }
+  .img-box-about-us img:nth-child(3){
+    position: absolute;
+    bottom:0;
+    right:13px;
+    z-index: 1000;
+  }
+  .img-box-about-us img:nth-child(4){
+    position: absolute;
+    bottom:11px;
+    left:0px;
+    z-index: 100;
+  }
+  .text-about-us{
+    padding:2.625rem 7rem 2.625rem 0;
+  }
+  .text-about-us p:nth-child(1){
+    font: 14px yekanregular;
+    color:#9164E8;
+    padding-bottom:0.25rem;
+    margin: 0;
+
+  }
+
+  .text-about-us p:nth-child(2){
+    font: 24px/38px yekanbold;
+    color:#212121;
+    padding-bottom: 1rem;
+  }
+  .text-about-us p:nth-child(3),p:nth-child(4){
+    font: 14px/19px yekanregular;
+    color:#616161;
+    padding-bottom: 1rem;
+  }
+  .text-about-us a{
+
+  }
+  .read-more{
+    width: 150px;
+    height: 40px;
+    background-color: #9164E8;
+    border-radius: 0.25rem;
+    font: 14px yekanmedium;
+    color: #FFFFFF;
+    line-height: 40px;
+    padding: 0;
+
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* ==========================================================================
    Helper classes
    ========================================================================== */
