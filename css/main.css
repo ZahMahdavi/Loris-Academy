@@ -91,31 +91,32 @@ textarea {
     font-family: yekanregular;
     font-style: normal;
     font-weight: normal;
-    src: url('../fonts/YekanBakh.ttf') format('ttf');
+    src: url('../fonts/YekanBakh.ttf') format('truetype'),
    }
    @font-face {
     font-family: yekanmedium;
     font-style: normal;
     font-weight: 500;
-    src: url('../fonts/YekanBakh-Medium.ttf') format('ttf');
+    src: url('../fonts/YekanBakh-Medium.ttf') format('truetype'),
    }
+   
    @font-face {
     font-family: yekanbold;
     font-style: normal;
     font-weight: bold;
-    src: url('../fonts/YekanBakh-Bold.ttf') format('ttf');
+    src: url('../fonts/YekanBakh-Bold.ttf') format('truetype'),
    }
    @font-face {
     font-family: yekanlight;
     font-style: normal;
     font-weight: 300;
-    src: url('../fonts/YekanBakh-Light.ttf') format('ttf');
+    src: url('../fonts/YekanBakh-Light.ttf') format('truetype'),
    }
    @font-face {
     font-family: yekanheavy;
     font-style: normal;
     font-weight: 900;
-    src: url('../fonts/YekanBakh-Heavy.ttf') format('ttf');
+    src: url('../fonts/YekanBakh-Heavy.ttf') format('truetype');
    }
 
    /* icomoon */
@@ -134,7 +135,7 @@ textarea {
   [class^="icon-"], [class*=" icon-"] {
     /* use !important to prevent issues with browser extensions that change fonts */
     font-family: 'icomoon' !important;
-    speak-as: never;
+    /* speak-as: never; */
     font-style: normal;
     font-weight: normal;
     font-variant: normal;
@@ -335,10 +336,10 @@ overflow: hidden;
     left:0px;
     z-index: 100;
   }
-  .text-about-us{
+  .text-box{
     padding:2.625rem 7rem 2.625rem 0;
   }
-  .text-about-us p:nth-child(1){
+  .text-box p:nth-child(1){
     font: 14px yekanregular;
     color:#9164E8;
     padding-bottom:0.25rem;
@@ -346,19 +347,17 @@ overflow: hidden;
 
   }
 
-  .text-about-us p:nth-child(2){
+  .text-box p:nth-child(2){
     font: 24px/38px yekanbold;
     color:#212121;
     padding-bottom: 1rem;
   }
-  .text-about-us p:nth-child(3),p:nth-child(4){
+  .text-box p:nth-child(3),p:nth-child(4){
     font: 14px/19px yekanregular;
     color:#616161;
     padding-bottom: 1rem;
   }
-  .text-about-us a{
-
-  }
+ 
   .read-more{
     width: 150px;
     height: 40px;
@@ -370,13 +369,50 @@ overflow: hidden;
     padding: 0;
 
   }
+  .introduction{
+    background-image:url('../img/MaskGroup6.png');
+   background-repeat: no-repeat;
+    background-position: center;
+  }
+.introduction .text-box{
+  padding-right: 0;
+}
+
+  .intro-text{
+    width: 348px;
+    height: 111px;
+    padding-bottom: 0;
+    overflow:hidden;
+    }
+    .cactegories{
+        margin: 0.75rem 1.75rem;
+    }
+    .branches{
+      width: 301px;
+      height:306px;
+      overflow: hidden;
+      background-color: #FFFFFF;
+      box-shadow: 0px 4px 12px #1815150A;  
+      border: 1px solid #F6F6F6;
+      padding: 1.5rem 1.5rem 2rem;
+      margin: 19px 12px 35px;
 
 
+}
 
-
-
-
-
+   .branches p:nth-child(2){
+    font: 16px/21px yekanbold;
+    color: #212121;
+       }
+       .branches p:nth-child(3){
+        font: 14px/19px yekanregular;
+        color: #9E9E9E;
+           }
+    
+.to-know span{
+  font: 14px/19px yekanregular;
+  color: #212121;
+}
 
 
 
