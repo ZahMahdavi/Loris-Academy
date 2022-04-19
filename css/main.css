@@ -339,7 +339,7 @@ overflow: hidden;
   .text-box{
     padding:2.625rem 7rem 2.625rem 0;
   }
-  .text-box p:nth-child(1){
+  .text-box p:nth-child(1),.courses p:nth-child(1) .course-type span:nth-child(2),.course-type span:nth-child(2){
     font: 14px yekanregular;
     color:#9164E8;
     padding-bottom:0.25rem;
@@ -347,7 +347,7 @@ overflow: hidden;
 
   }
 
-  .text-box p:nth-child(2){
+  .text-box p:nth-child(2),.courses-title p:nth-child(1) {
     font: 24px/38px yekanbold;
     color:#212121;
     padding-bottom: 1rem;
@@ -372,52 +372,72 @@ overflow: hidden;
   .introduction{
     background-image:url('../img/MaskGroup6.png');
    background-repeat: no-repeat;
-    background-position: center;
+    background-position: right;
   }
 .introduction .text-box{
   padding-right: 0;
 }
 
-  .intro-text{
+.intro-text{
     width: 348px;
     height: 111px;
     padding-bottom: 0;
     overflow:hidden;
     }
-    .cactegories{
-        margin: 0.75rem 1.75rem;
+ .cactegories{
+    margin: 0.75rem 1.75rem;
     }
-    .branches{
-      width: 301px;
-      height:306px;
-      overflow: hidden;
-      background-color: #FFFFFF;
-      box-shadow: 0px 4px 12px #1815150A;  
-      border: 1px solid #F6F6F6;
-      padding: 1.5rem 1.5rem 2rem;
-      margin: 19px 12px 35px;
-
-
+ .branches{
+  width: 301px;
+  height:306px;
+  overflow: hidden;
+  background-color: #FFFFFF;
+  box-shadow: 0px 4px 12px #1815150A;  
+  border: 1px solid #F6F6F6;
+  padding: 1.5rem 1.5rem 2rem;
+  margin: 19px 12px 35px;
 }
 
-   .branches p:nth-child(2){
-    font: 16px/21px yekanbold;
-    color: #212121;
-       }
-       .branches p:nth-child(3){
-        font: 14px/19px yekanregular;
-        color: #9E9E9E;
-           }
+.branches p:nth-child(2){
+ font: 16px/21px yekanbold;
+ color: #212121;
+ }
+.branches p:nth-child(3),.courses-menu-link{
+ font: 14px/19px yekanregular;
+ color: #9E9E9E;
+ }
     
 .to-know span{
   font: 14px/19px yekanregular;
   color: #212121;
 }
+/*courses section*/
+.courses-menu li:nth-child(1){
+  width:94px;
+  height:34px;
+  background-color:#9164E8;
+  border-radius: 4px;
+  line-height: 34px;
+  text-align: center;
+}
 
+.first-link{
+color: #FAFAFA;
+}
+.course-box{
+  box-shadow: 0px 4px 12px #1815150A;
+  border: 1px solid #F6F6F6;
+  /* margin:13px 12px; */
+margin:13px 0;
+}
+.course-prof p,.date span:nth-child(2),.date span:nth-child(3),.date span:nth-child(4){
+  font: 14px/19px yekanregular;
+  color: #424242;
+}
 
-
-
-
+.course-type{
+  padding-left: 12px;
+}
 
 
 
