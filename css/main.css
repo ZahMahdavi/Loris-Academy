@@ -209,6 +209,13 @@ textarea {
   
 
   /* General */
+.container{    /* TO PREVENT CONFLICT WITH GUUTER "MAYBE IT CAUSES PADDING PROBLEM" */
+
+  padding-right:2.75rem;
+  padding-left:2.75rem;
+
+}
+
   a{
     text-decoration:none;  
   }
@@ -339,7 +346,7 @@ overflow: hidden;
   .text-box{
     padding:2.625rem 7rem 2.625rem 0;
   }
-  .text-box p:nth-child(1),.courses p:nth-child(1) .course-type span:nth-child(2),.course-type span:nth-child(2){
+  .text-box p:nth-child(1),.courses p:nth-child(1),.course-type span:nth-child(2),.course-type span:nth-child(2){
     font: 14px yekanregular;
     color:#9164E8;
     padding-bottom:0.25rem;
@@ -384,8 +391,8 @@ overflow: hidden;
     padding-bottom: 0;
     overflow:hidden;
     }
- .cactegories{
-    margin: 0.75rem 1.75rem;
+ .categories{
+    /* margin: 0.75rem 1.75rem; */
     }
  .branches{
   width: 301px;
@@ -397,11 +404,25 @@ overflow: hidden;
   padding: 1.5rem 1.5rem 2rem;
   margin: 19px 12px 35px;
 }
+.icon-bg{
+  width: 4rem;
+  height: 4rem;
+  background-color: #9164E8;
+  border-radius: 4px;
+  text-align: center;
+  line-height: 4rem;
+  margin-bottom:1rem;
+}
+ /* FONT ICONS ARE 16X16 CANT BE CHANGED?????????????????? */
+.icon-bg span{ 
+  transform: scale(2);
+}
 
 .branches p:nth-child(2){
  font: 16px/21px yekanbold;
  color: #212121;
  }
+ 
 .branches p:nth-child(3),.courses-menu-link{
  font: 14px/19px yekanregular;
  color: #9E9E9E;
@@ -427,9 +448,12 @@ color: #FAFAFA;
 .course-box{
   box-shadow: 0px 4px 12px #1815150A;
   border: 1px solid #F6F6F6;
-  /* margin:13px 12px; */
-margin:13px 0;
+  padding:13px 0 13px 24px;
 }
+/* .img-course img{
+  width: 325px;
+  height: 255px;
+} */
 .course-prof p,.date span:nth-child(2),.date span:nth-child(3),.date span:nth-child(4){
   font: 14px/19px yekanregular;
   color: #424242;
@@ -439,8 +463,103 @@ margin:13px 0;
   padding-left: 12px;
 }
 
+/*internship section*/
+.internship{
+  margin-top:8.75rem;
+  margin-bottom: 8.625rem;
 
+}
+.box-internship{
+  position: relative;
+}
+.img-box-internship{
+  width: 364px;
+  height: 206px;
+  background-color: #FFFFFF;
+  border-radius: 6px;
+  box-shadow: 0px 4px 12px #1815150A;
+   position: absolute;
+   z-index:10;
+   top: 3rem;
+   right: 0.8125rem;
+   margin-bottom: 3rem;
+}
+.interns-img-box{
+  width: 16rem;
+  height:7rem;
+  /* padding:49px 24px 45px; */
+  position: absolute;
+  top:49px;
+  right:16px;
 
+}
+.interns-img-box img{
+  margin: 0.5rem;
+}
+.text-box-internship{
+  width: 93px;
+  height: 82px;
+  background-color:#9164E8;
+  border-radius: 6px;
+  position: absolute;
+  z-index:100;
+  top:-2.5rem;
+  right:-13px
+
+}
+.text-box-internship p{
+  font: 20px/27px yekanbold;
+  color: #FAFAFA;
+  text-align: center;
+  padding:0;
+}
+.intern{
+  width: 8.75rem;
+  height:8.75rem;
+  background-color: #FFFFFF;
+  box-shadow: 0px 4px 12px #1815150A;
+  border-radius: 4px;
+  position:absolute;
+  top:4.375rem;
+  right:18.75rem;
+  z-index:1000;
+}
+.intern img{
+  padding-top: 1rem;
+  padding-bottom: 0.8125rem;
+}
+.intern p{
+  font: 12px/16px yekanregular;
+  color: #212121;
+  margin-bottom: 0;
+
+  }
+.intern span{
+  font: 10px/14px yekanregular;
+  color: #9164E8;
+  text-align: center;
+  padding-top: 0.5625rem;
+  padding-bottom: 1.5rem;
+}
+.at-glance-category{
+  margin:7.5rem auto;
+}
+.at-glance{
+  width:747px;
+  height:auto;
+}
+.at-glance-box{
+  width:233px;
+  height:174px;
+  background: #FFFFFF;
+  box-shadow: 0px 4px 12px #1815150A;
+  border: 1px solid #F6F6F6;
+  border-radius: 6px;
+}
+
+.your-class{
+	background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='316.623' height='173.251' viewBox='0 0 316.623 173.251'%3E%3Cpath id='Path_920' data-name='Path 920' d='M-8755 3110.037a31.023 31.023 0 0 0 26.82 14.595c18.893 0-16.622-26.6 4.648-26.6s66.168-19.779 91.631-19.779 41.218 43.122 74.165 37.912 33.877-25.352 65.911-14.5 42.382 51.787 42.382 51.787' transform='translate(7277.57 -5659.521) rotate(-19)' fill='none' stroke='%239164e8' stroke-width='3'/%3E%3C/svg%3E");
+}
 
 /* ==========================================================================
    Helper classes
