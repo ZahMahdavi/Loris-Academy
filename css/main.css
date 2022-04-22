@@ -224,11 +224,17 @@ textarea {
   content: "\e90f";
   color: #fafafa;
 }
+.icon-arrow-up2:before {
+  content: "\ea3a";
+}
 
 
 /* General */
+body{
+  background-color: #FCFCFC;
+}
 .container {
-  /* TO PREVENT CONFLICT WITH GUUTER "MAYBE IT CAUSES PADDING PROBLEM" */
+  /*ISSUE:  TO PREVENT CONFLICT WITH GUUTER "MAYBE IT CAUSES PADDING PROBLEM" */
 
   padding-right: 2.75rem;
   padding-left: 2.75rem;
@@ -275,10 +281,6 @@ ul {
   line-height: 44px;
 }
 
-.form-control-extera {
-  border: none;
-  width: auto;
-}
 
 .form-control-extera a {
   padding-left: 0.75rem;
@@ -311,8 +313,6 @@ ul {
   height: 44px;
   overflow: hidden;
 }
-
-.main-slide span {}
 
 .btn-details {
   background-color: #9164E8;
@@ -375,8 +375,7 @@ ul {
   padding: 2.625rem 7rem 2.625rem 0;
 }
 
-.text-box p:nth-child(1),
-.courses p:nth-child(1),
+.text-box p:nth-child(1),.courses p:nth-child(1),
 .course-type span:nth-child(2),
 .course-type span:nth-child(2) {
   font: 14px yekanregular;
@@ -429,9 +428,6 @@ p:nth-child(4) {
   overflow: hidden;
 }
 
-.categories {
-  /* margin: 0.75rem 1.75rem; */
-}
 
 .branches {
   width: 301px;
@@ -454,7 +450,7 @@ p:nth-child(4) {
   margin-bottom: 1rem;
 }
 
-/* FONT ICONS ARE 16X16 CANT BE CHANGED?????????????????? */
+/*ISSUE:  FONT ICONS ARE 16X16 CANT BE CHANGED?????????????????? */
 .icon-bg span {
  font-size: 40px;
 }
@@ -560,7 +556,7 @@ p:nth-child(4) {
   right: -13px
 }
 
-.text-box-internship p {
+.text-box-internship p,.text-box-document p {
   font: 20px/27px yekanbold;
   color: #FAFAFA;
   text-align: center;
@@ -598,6 +594,17 @@ p:nth-child(4) {
   padding-top: 0.5625rem;
   padding-bottom: 1.5rem;
 }
+.logo-op-1{
+  width: 275px;
+  height:119px;
+  background-image: url('../img/Loris-Logo-03@2x.png');
+  background-size: cover;
+  background-position: center;
+  opacity: 0.02;
+  position: absolute;
+  bottom: -3rem;
+  left:-6.375rem;
+}
 
 .at-glance-category {
   margin: 7.5rem auto;
@@ -634,14 +641,99 @@ p:nth-child(4) {
   text-align: center;
   }
 /*document section*/
-.text-box-document {
+/* .text-box-document {
   padding: 2.625rem 7rem 2.625rem 0;
+} */
+.box-document{
+  width: 348px;
+  height: 368px;
+  box-shadow: 0px 4px 12px #1815150A;
+  border-radius: 4px;
+  position: relative;
+  z-index:10;
+  margin-bottom:9.375rem ; /*ISSUE: TO BE CHANGED !!!!!!!!!!!!*/
 }
-
-.your-class {
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='316.623' height='173.251' viewBox='0 0 316.623 173.251'%3E%3Cpath id='Path_920' data-name='Path 920' d='M-8755 3110.037a31.023 31.023 0 0 0 26.82 14.595c18.893 0-16.622-26.6 4.648-26.6s66.168-19.779 91.631-19.779 41.218 43.122 74.165 37.912 33.877-25.352 65.911-14.5 42.382 51.787 42.382 51.787' transform='translate(7277.57 -5659.521) rotate(-19)' fill='none' stroke='%239164e8' stroke-width='3'/%3E%3C/svg%3E");
+.text-box-document {
+  width: 159px;
+  height: 105px;
+  background-color: #9164E8;
+  border-radius: 6px;
+  position: absolute;
+  z-index: 100;
+  top: -2.5rem;
+  right: -13px;
 }
-
+.text-box-document p {
+  line-height:38px;
+  padding: 1.125rem 1rem 1.125rem 2rem;
+  margin:0;
+}
+.sample-box-document{
+  width: 24.75rem;
+  height: 4.5rem;
+  position: absolute;
+  z-index: 100;
+  top: 6rem;
+  right:4.5rem;
+}
+.sample-box-document img{
+  width: 2.5rem;
+  height: 2.5rem;
+  margin-left: 0.5rem;
+}
+.sample-box-document p{
+  font: 14px/19px yekanregular;
+  color: #616161;
+  margin:0;
+}
+.sample-box-document div{
+box-shadow: 0px 4px 12px #1815150A;
+border-radius: 4px;
+}
+.form-inline{
+width: 86.2%;
+background: #F6F6F6;
+border-radius: 4px;
+position: absolute;
+z-index: 100;
+bottom:1.5rem;
+margin: 1.5rem 1.5rem 0;
+}
+.form-inline input{
+background-color: #F6F6F6;
+}
+.form-control::placeholder{
+  color:#BDBDBD;
+  font-size: 16px;
+  font-family: iranyekanmedium;
+  }
+.send-btn{
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: #EFEFEF;
+  position:absolute;
+  left:8px;
+  bottom:4px ;
+}
+.send-btn span{
+font-size: 16px;
+color: #BDBDBD;
+position: absolute;
+left:6px;
+bottom:6px ;
+}
+.logo-op-2{
+  width: 325px;
+  height:140px;
+  background-image: url('../img/Loris-Logo-03@2x.png');
+  background-size: cover;
+  background-position: center;
+  opacity: 0.02;
+  position: absolute;
+  bottom: -3rem;
+  left:-13.5625rem;
+}
 /*footer*/
 
 .top-footer {
@@ -665,13 +757,13 @@ p:nth-child(4) {
   font: 16px/21px iranyekanregular;
 }
 
-/*I DONT KNOW WHERE 62PX CAME FROM SO I HAD TO DEFINE THE HEIGHT OF LI & UL MANUALLY*/
+/*ISSUE: I DONT KNOW WHERE 62PX CAME FROM SO I HAD TO DEFINE THE HEIGHT OF LI & UL MANUALLY*/
 .social-media-icons-footer {
   height: 20.5px;
 }
 
 .social-media-icons-footer li {
-  /*I DONT KNOW WHERE 62PX CAME FROM SO I HAD TO DEFINE THE HEIGHT OF LI MANUALLY*/
+  /*ISSUE: I DONT KNOW WHERE 62PX CAME FROM SO I HAD TO DEFINE THE HEIGHT OF LI MANUALLY*/
   height: 20.5px;
 
 }
@@ -704,7 +796,7 @@ p:nth-child(4) {
   padding-top: 3.4375rem;
 }
 
-/* FOR THIS PART THERE SHOULD BE OTHER SOLUTIONS TO CENTERISE THE IMAG IN THE RELATED BOX!!!!!!!!!!!!!!*/
+/*ISSUE:  FOR THIS PART THERE SHOULD BE OTHER SOLUTIONS TO CENTERISE THE IMAG IN THE RELATED BOX!!!!!!!!!!!!!!*/
 .bg-approved-footer {
   width: 140px;
   height: 140px;
@@ -855,13 +947,11 @@ p:nth-child(4) {
   a:visited {
     text-decoration: underline;
   }
-
   a[href]::after {
-    content: " ("attr(href) ")";
+    content: " (" attr(href) ")";
   }
-
   abbr[title]::after {
-    content: " ("attr(title) ")";
+    content: " (" attr(title) ")";
   }
 
   /*

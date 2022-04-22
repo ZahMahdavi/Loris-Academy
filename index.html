@@ -25,7 +25,7 @@
   <header class="container-fluid bg-img p-0">
     <div class="bg-col">
       <div class="container">
-        <!-- MARGIN-X IS 94 PX BUT IT SHOULD BE 105.5 PX -->
+        <!-- ISSUE:  MARGIN-X IS 94 PX BUT IT SHOULD BE 105.5 PX -->
         <nav class="navbar navbar-expand-lg py-4">
           <a class="navbar-brand col-2 p-0" href="#"><img src="img/Loris-Logo-03.png" alt="loris academy"
               style="height:3rem;"></a>
@@ -42,7 +42,7 @@
               <a class="nav-link py-0" href="#">تماس با ما</a>
             </div>
             <form class="d-flex col-6 justify-content-end align-items-center" style="height: 3rem;">
-              <input class="form-control form-control-extera me-2 hidden" type="search" aria-label="Search">
+              <input class="form-control me-2 hidden" type="search" aria-label="Search">
               <a class="icon-Group-309 px-4" href="#"></a>
               <a class="btn border border-1 py-0" href="#"><span class="icon-Group-30"></span><span
                   class="login">ورود/ثبت نام</span></a>
@@ -61,12 +61,12 @@
       </div>
     </div>
   </header>
-  <!--main-slide should be inside <header> or out of it?????????????? -->
+  <!-- ISSUE: main-slide should be inside <header> or out of it?????????????? -->
 
   <!--about-us section-->
   <section class="about-us">
     <div class="container d-flex">
-      <!-- MARGIN-X IS 94 PX BUT IT SHOULD BE 105.5 PX -->
+      <!-- ISSUE:  MARGIN-X IS 94 PX BUT IT SHOULD BE 105.5 PX -->
       <div class="img-box-about-us col-12 col-lg-6">
         <div class="text-box-about-us">
           <p>لورم ایپسوم متن ساختگی با نامفهوم از چاپ استفاده</p>
@@ -92,7 +92,7 @@
   <!-- categories section -->
   <div class="categories">
     <div class="container overflow-hidden d-flex">
-      <!-- MARGIN-X IS 94 PX BUT IT SHOULD BE 105.5 PX -->
+      <!-- ISSUE:  MARGIN-X IS 94 PX BUT IT SHOULD BE 105.5 PX -->
       <div class="introduction col-lg-5 col-12 ">
         <div class="text-box">
           <p>رشته ها</p>
@@ -167,7 +167,7 @@
   </div>
   <!-- courses section -->
   <div class="container">
-    <!-- MARGIN-X IS 94 PX BUT IT SHOULD BE 105.5 PX -->
+    <!-- ISSUE:  MARGIN-X IS 94 PX BUT IT SHOULD BE 105.5 PX -->
     <div class="row">
       <div class="courses">
         <p>دوره ها</p>
@@ -190,7 +190,7 @@
     </div>
   </div>
   <div class="container">
-    <!-- MARGIN-X IS 94 PX BUT IT SHOULD BE 105.5 PX -->
+    <!-- ISSUE:  MARGIN-X IS 94 PX BUT IT SHOULD BE 105.5 PX -->
     <div class="courses-boxes d-flex flex-wrap">
       <div class="course-box col-lg-4 col-12">
         <figure>
@@ -340,7 +340,7 @@
   <!-- internship section -->
   <section class="internship">
     <div class="container d-flex">
-      <!-- MARGIN-X IS 94 PX BUT IT SHOULD BE 105.5 PX -->
+      <!-- ISSUE:  MARGIN-X IS 94 PX BUT IT SHOULD BE 105.5 PX -->
       <div class="box-internship col-12 col-lg-5 align-items-center">
         <div class="img-box-internship">
           <figure class="interns-img-box d-flex flex-wrap justify-content-between">
@@ -368,6 +368,7 @@
             <span>کارآموز</span><span>UI/UX design</span>
           </div>
         </div>
+        <div class="logo-op-1"></div>
       </div>
       <div class="text-box col-12 col-lg-7">
         <p>کارآموزی</p>
@@ -381,7 +382,7 @@
   </section>
   <!-- courses section -->
   <div class="container">
-    <!-- MARGIN-X IS 94 PX BUT IT SHOULD BE 105.5 PX -->
+    <!-- ISSUE:  MARGIN-X IS 94 PX BUT IT SHOULD BE 105.5 PX -->
     <div class="row">
       <div class="courses">
         <p>دوره ها</p>
@@ -404,7 +405,7 @@
     </div>
   </div>
   <div class="container">
-    <!-- MARGIN-X IS 94 PX BUT IT SHOULD BE 105.5 PX -->
+    <!-- ISSUE:  MARGIN-X IS 94 PX BUT IT SHOULD BE 105.5 PX -->
     <div class="courses-boxes d-flex flex-wrap">
       <div class="course-box col-lg-4 col-12">
         <figure>
@@ -505,11 +506,31 @@
   <!-- document section -->
   <section class="document">
     <div class="container d-flex">
-      <!-- MARGIN-X IS 94 PX BUT IT SHOULD BE 105.5 PX -->
-      <div class="box-document col-12 col-lg-6 align-items-center">
-
+      <!-- ISSUE:  MARGIN-X IS 94 PX BUT IT SHOULD BE 105.5 PX -->
+      <div class="col-12 col-lg-6 align-items-center">
+        <div class="box-document">
+          <div class="text-box-document">
+            <p>لورم ایپسوم ساختگی با نامفهوم از چاپ استفاده</p>
+          </div>
+          <div class="sample-box-document">
+          <div class="bg-white p-3 my-3 d-flex">
+            <img src="img/MaskGroup10.png" alt="intern">
+            <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است</p>
+          </div>
+          <div class="bg-black p-3 my-3 d-flex">
+            <img src="img/Group451.png" alt="intern">
+            <p class="text-white">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است</p>
+          </div>
+        </div>
+        <form class="form-inline d-flex">
+          <input class="form-control border-0" type="text" placeholder="پیام"
+            aria-label="text">
+          <button class="btn send-btn" type="submit"><span class="icon-arrow-up2"></span></button>
+        </form>
+        <div class="logo-op-2"></div>
       </div>
-      <div class="text-box-document  ps-2 mb-2 col-12 col-lg-6">
+    </div>
+      <div class="text-box ps-2 mb-2 col-12 col-lg-6">
         <p>مدارک</p>
         <p>آیا شما هم در مورد مدارک نیاز به مشاوره دارید؟</p>
         <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است چاپگرها و متون
@@ -520,6 +541,11 @@
       </div>
     </div>
   </section>
+  <!-- blog -->
+
+
+
+
 
   <!-- footer -->
   <footer class="main-footer">
