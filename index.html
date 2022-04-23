@@ -14,18 +14,18 @@
   <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
   <link rel="manifest" href="/site.webmanifest">
   <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
-  <!-- Bootstrap CSS -->
+  <!-- CSS -->
   <link rel="stylesheet" href="css/bootstrap.rtl.min.css">
   <link rel="stylesheet" href="css/main.css">
 
 </head>
+<!-- ISSUE: IN CONTAINER MARGIN-X IS 94PX BUT IT SHOULD BE 105.5 PX -->
 
 <body>
   <!--header-->
   <header class="container-fluid bg-img p-0">
     <div class="bg-col">
       <div class="container">
-        <!-- ISSUE:  MARGIN-X IS 94 PX BUT IT SHOULD BE 105.5 PX -->
         <nav class="navbar navbar-expand-lg py-4">
           <a class="navbar-brand col-2 p-0" href="#"><img src="img/Loris-Logo-03.png" alt="loris academy"
               style="height:3rem;"></a>
@@ -41,12 +41,14 @@
               <a class="nav-link py-0" href="#">اساتید</a>
               <a class="nav-link py-0" href="#">تماس با ما</a>
             </div>
-            <form class="d-flex col-6 justify-content-end align-items-center" style="height: 3rem;">
+            <div class="nav-form col-6">
+            <form class="d-flex justify-content-end align-items-center">
               <input class="form-control me-2 hidden" type="search" aria-label="Search">
-              <a class="icon-Group-309 px-4" href="#"></a>
-              <a class="btn border border-1 py-0" href="#"><span class="icon-Group-30"></span><span
-                  class="login">ورود/ثبت نام</span></a>
+              <a class="icon-Group-309 fs-4 px-4" href="#"></a>
+              <a class="btn border border-1 p-0 d-flex align-items-center" href="#"><span class="icon-Group-30 fs-4 p-2"></span><span
+                  class="login"><span class="pe-1">ورود</span><span class="pe-1">/</span><span class="pe-1">ثبت نام</span></span></a>
             </form>
+          </div>
           </div>
         </nav>
       </div>
@@ -56,7 +58,7 @@
           <span>مرکز برگزاری</span>
           <span>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است</span>
           <span>دوره های آموزشی و کارآموزی</span>
-          <button class="my-3 btn-details">دوره های آموزشی</button>
+          <a class="my-3 btn-details">دوره های آموزشی</a>
         </div>
       </div>
     </div>
@@ -66,8 +68,7 @@
   <!--about-us section-->
   <section class="about-us">
     <div class="container d-flex">
-      <!-- ISSUE:  MARGIN-X IS 94 PX BUT IT SHOULD BE 105.5 PX -->
-      <div class="img-box-about-us col-12 col-lg-6">
+      <div class="img-box-about-us col-lg-6 col-12">
         <div class="text-box-about-us">
           <p>لورم ایپسوم متن ساختگی با نامفهوم از چاپ استفاده</p>
         </div>
@@ -75,7 +76,7 @@
         <img src="img/MaskGroup2.jpg">
         <img src="img/MaskGroup4.png">
       </div>
-      <div class="text-box col-12 col-lg-6">
+      <div class="text-box col-lg-6 col-12">
         <p>درباره ما</p>
         <p>ما را بیشتر بشناسید</p>
         <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است چاپگرها و متون
@@ -92,7 +93,6 @@
   <!-- categories section -->
   <div class="categories">
     <div class="container overflow-hidden d-flex">
-      <!-- ISSUE:  MARGIN-X IS 94 PX BUT IT SHOULD BE 105.5 PX -->
       <div class="introduction col-lg-5 col-12 ">
         <div class="text-box">
           <p>رشته ها</p>
@@ -167,7 +167,6 @@
   </div>
   <!-- courses section -->
   <div class="container">
-    <!-- ISSUE:  MARGIN-X IS 94 PX BUT IT SHOULD BE 105.5 PX -->
     <div class="row">
       <div class="courses">
         <p>دوره ها</p>
@@ -190,7 +189,6 @@
     </div>
   </div>
   <div class="container">
-    <!-- ISSUE:  MARGIN-X IS 94 PX BUT IT SHOULD BE 105.5 PX -->
     <div class="courses-boxes d-flex flex-wrap">
       <div class="course-box col-lg-4 col-12">
         <figure>
@@ -340,7 +338,6 @@
   <!-- internship section -->
   <section class="internship">
     <div class="container d-flex">
-      <!-- ISSUE:  MARGIN-X IS 94 PX BUT IT SHOULD BE 105.5 PX -->
       <div class="box-internship col-12 col-lg-5 align-items-center">
         <div class="img-box-internship">
           <figure class="interns-img-box d-flex flex-wrap justify-content-between">
@@ -382,7 +379,6 @@
   </section>
   <!-- courses section -->
   <div class="container">
-    <!-- ISSUE:  MARGIN-X IS 94 PX BUT IT SHOULD BE 105.5 PX -->
     <div class="row">
       <div class="courses">
         <p>دوره ها</p>
@@ -405,7 +401,6 @@
     </div>
   </div>
   <div class="container">
-    <!-- ISSUE:  MARGIN-X IS 94 PX BUT IT SHOULD BE 105.5 PX -->
     <div class="courses-boxes d-flex flex-wrap">
       <div class="course-box col-lg-4 col-12">
         <figure>
@@ -481,6 +476,7 @@
       </div>
     </div>
   </div>
+  <!-- at-glance section -->
   <section class="at-glance-category">
     <div class="text-box px-0 d-flex flex-column align-items-center">
       <p>لوریس</p>
@@ -506,30 +502,29 @@
   <!-- document section -->
   <section class="document">
     <div class="container d-flex">
-      <!-- ISSUE:  MARGIN-X IS 94 PX BUT IT SHOULD BE 105.5 PX -->
       <div class="col-12 col-lg-6 align-items-center">
         <div class="box-document">
           <div class="text-box-document">
             <p>لورم ایپسوم ساختگی با نامفهوم از چاپ استفاده</p>
           </div>
           <div class="sample-box-document">
-          <div class="bg-white p-3 my-3 d-flex">
-            <img src="img/MaskGroup10.png" alt="intern">
-            <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است</p>
+            <div class="bg-white p-3 my-3 d-flex">
+              <img src="img/MaskGroup10.png" alt="intern">
+              <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است</p>
+            </div>
+            <div class="bg-black p-3 my-3 d-flex">
+              <img src="img/Group451.png" alt="intern">
+              <p class="text-white">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان
+                گرافیک است</p>
+            </div>
           </div>
-          <div class="bg-black p-3 my-3 d-flex">
-            <img src="img/Group451.png" alt="intern">
-            <p class="text-white">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است</p>
-          </div>
+          <form class="form-inline d-flex">
+            <input class="form-control border-0" type="text" placeholder="پیام" aria-label="text">
+            <button class="btn send-btn" type="submit"><span class="icon-arrow-up2"></span></button>
+          </form>
+          <div class="logo-op-2"></div>
         </div>
-        <form class="form-inline d-flex">
-          <input class="form-control border-0" type="text" placeholder="پیام"
-            aria-label="text">
-          <button class="btn send-btn" type="submit"><span class="icon-arrow-up2"></span></button>
-        </form>
-        <div class="logo-op-2"></div>
       </div>
-    </div>
       <div class="text-box ps-2 mb-2 col-12 col-lg-6">
         <p>مدارک</p>
         <p>آیا شما هم در مورد مدارک نیاز به مشاوره دارید؟</p>
@@ -541,12 +536,100 @@
       </div>
     </div>
   </section>
-  <!-- blog -->
+  <!-- blog section-->
+  <div class="container">
+    <div class="blog">
+      <div class="blog-recent">
+        <p>وبلاگ</p>
+        <p>آخرین مطالب وبلاگ</p>
+        <!-- ISSUE:  SLIDER TAB SHOULD PLACE HERE!!!!!!!!!!! -->
+      </div>
+      <!-- ISSUE:  SWIPER?????? -->
+      <!-- Slider main container -->
+      <div class="swiper col-12">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper d-flex justify-content-between">
+          <!-- Slides -->
+          <div class="swiper-slide col-lg-4 col-12">
+            <div class="blog-slide d-flex flex-column ">
+              <figure class="blog-img m-0">
+                <img src="img/w.png">
+              </figure>
+              <p class="px-3 py-2 m-0">لورم ایپسون متن</p>
+              <p class="p-3 m-0">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان
+                گرافیک است چاپگرها و
+                متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی</p>
+              <div class="to-know d-flex justify-content-end">
+                <span>بیشتر بدانید</span>
+                <span class="icon-Group-315 fw-bolder"></span>
+              </div>
+              <div class="date-published">
+                <p>8 اردیبهشت</p>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide col-lg-4 col-12">
+            <div class="blog-slide d-flex flex-column">
+              <figure class="blog-img m-0">
+                <img src="img/w.png">
+              </figure>
+              <p class="px-3 py-2 m-0">لورم ایپسون متن</p>
+              <p class="p-3 m-0">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان
+                گرافیک است چاپگرها و
+                متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی</p>
+              <div class="to-know d-flex justify-content-end">
+                <span>بیشتر بدانید</span>
+                <span class="icon-Group-315 fw-bolder"></span>
+              </div>
+              <div class="date-published">
+                <p>8 اردیبهشت</p>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide col-lg-4 col-12">
+            <div class="blog-slide d-flex flex-column">
+              <figure class="blog-img m-0">
+                <img src="img/w.png">
+              </figure>
+              <p class="px-3 py-2 m-0">لورم ایپسون متن</p>
+              <p class="p-3 m-0">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان
+                گرافیک است چاپگرها و
+                متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی</p>
+              <div class="to-know d-flex justify-content-end">
+                <span>بیشتر بدانید</span>
+                <span class="icon-Group-315 fw-bolder"></span>
+              </div>
+              <div class="date-published">
+                <p>8 اردیبهشت</p>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide col-lg-4 col-12">
+            <div class="blog-slide d-flex flex-column">
+              <figure class="blog-img m-0">
+                <img src="img/w.png">
+              </figure>
+              <p class="px-3 py-2 m-0">لورم ایپسون متن</p>
+              <p class="p-3 m-0">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان
+                گرافیک است چاپگرها و
+                متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی</p>
+              <div class="to-know d-flex justify-content-end">
+                <span>بیشتر بدانید</span>
+                <span class="icon-Group-315 fw-bolder"></span>
+              </div>
+              <div class="date-published">
+                <p>8 اردیبهشت</p>
+              </div>
+            </div>
+          </div>
 
 
 
 
-
+        </div>
+      </div>
+    </div>
+  </div>
   <!-- footer -->
   <footer class="main-footer">
     <div class="top-footer">
@@ -585,9 +668,12 @@
           </div>
           <div class="text-box-footer col-4">
             <p>لورم ایپسوم ساختگی با تولید سادگی</p>
-            <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است متون بلکه
-              روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با
-              هدف بهبود ابزارهای کاربردی می باشد کتابهای زیادی در شصت و سه درصد گذشته حال و آینده شناخت فراوان جامعه و
+            <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است متون
+              بلکه
+              روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای
+              متنوع با
+              هدف بهبود ابزارهای کاربردی می باشد کتابهای زیادی در شصت و سه درصد گذشته حال و آینده شناخت فراوان
+              جامعه و
               متخصصان را می طلبد تا با</p>
           </div>
           <div class="col-4">

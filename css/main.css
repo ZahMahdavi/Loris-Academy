@@ -125,21 +125,20 @@ textarea {
 /* icomoon */
 @font-face {
   font-family: 'icomoon';
-  src: url('../fonts/icomoon.eot');
-  src: url('../fonts/icomoon.eot') format('embedded-opentype'),
-    url('../fonts/icomoon.ttf') format('truetype'),
-    url('../fonts/icomoon.woff') format('woff'),
-    url('../fonts/icomoon.svg') format('svg');
+  src:  url('../fonts/icomoon.eot?exw1fx');
+  src:  url('../fonts/icomoon.eot?exw1fx#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon.ttf?exw1fx') format('truetype'),
+    url('../fonts/icomoon.woff?exw1fx') format('woff'),
+    url('../fonts/icomoon.svg?exw1fx#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
 }
 
-[class^="icon-"],
-[class*=" icon-"] {
+[class^="icon-"], [class*=" icon-"] {
   /* use !important to prevent issues with browser extensions that change fonts */
   font-family: 'icomoon' !important;
-  /* speak-as: never; */
+  speak: never;
   font-style: normal;
   font-weight: normal;
   font-variant: normal;
@@ -152,76 +151,62 @@ textarea {
 }
 
 .icon-creativity:before {
+  content: "\e900";
+  color: #fafafa;
+}
+.icon-graduation-cap:before {
   content: "\e901";
   color: #fafafa;
 }
-
-.icon-graduation-cap:before {
-  content: "\e902";
-  color: #fafafa;
-}
-
 .icon-Group-30:before {
-  content: "\e903";
+  content: "\e902";
   color: #fff;
 }
-
 .icon-Group-146:before {
+  content: "\e903";
+  color: #fafafa;
+}
+.icon-Group-147:before {
   content: "\e904";
   color: #fafafa;
 }
-
-.icon-Group-147:before {
+.icon-Group-148:before {
   content: "\e905";
   color: #fafafa;
 }
-
-.icon-Group-148:before {
+.icon-Group-209:before {
   content: "\e906";
   color: #fafafa;
 }
-
-.icon-Group-209:before {
-  content: "\e907";
-  color: #fafafa;
-}
-
 .icon-Group-309:before {
-  content: "\e908";
+  content: "\e907";
   color: #fff;
 }
-
 .icon-Group-315:before {
-  content: "\e909";
+  content: "\e908";
 }
-
 .icon-Group-324:before {
-  content: "\e90a";
+  content: "\e909";
   color: #616161;
 }
-
 .icon-Group-576:before {
+  content: "\e90a";
+  color: #9164e8;
+}
+.icon-Group-589:before {
   content: "\e90b";
   color: #9164e8;
 }
-
-.icon-Group-589:before {
-  content: "\e90c";
-  color: #9164e8;
-}
-
 .icon-monitor:before {
+  content: "\e90c";
+  color: #fafafa;
+}
+.icon-Page-1:before {
   content: "\e90d";
   color: #fafafa;
 }
-
-.icon-Page-1:before {
-  content: "\e90e";
-  color: #fafafa;
-}
-
 .icon-profile-2:before {
-  content: "\e90f";
+  content: "\e90e";
   color: #fafafa;
 }
 .icon-arrow-up2:before {
@@ -274,11 +259,17 @@ ul {
   text-align: center;
 }
 
+.nav-form{
+  height: 40px;
+}
+
 .login {
-  font-size: 0.75rem;
+  font-size: 12px;
   color: #fff;
   font-family: iranyekanregular;
-  line-height: 44px;
+  line-height: 38px;
+  padding-left: 1.25rem;
+
 }
 
 
@@ -316,11 +307,11 @@ ul {
 
 .btn-details {
   background-color: #9164E8;
-  width: 170px;
+  width: 10.625rem;
   height: 3rem;
-  border-radius: 0.25rem;
+ line-height: 3rem;
+  border-radius: 4px;
 }
-
 /* about-us section */
 .about-us {
   margin: 7rem auto;
@@ -328,6 +319,7 @@ ul {
 
 .img-box-about-us {
   position: relative;
+  float: right;
 }
 
 .text-box-about-us {
@@ -335,7 +327,6 @@ ul {
   height: 223px;
   background-color: #9164E8;
   border-radius: 6px;
-  display: inline-block;
   align-items: center;
   position: absolute;
   z-index: 10000;
@@ -353,13 +344,12 @@ ul {
   position: absolute;
   top: 0.8125rem;
   left: 19px;
-  ;
   z-index: 10;
 }
 
 .img-box-about-us img:nth-child(3) {
   position: absolute;
-  bottom: 0;
+  bottom: 0PX;
   right: 13px;
   z-index: 1000;
 }
@@ -367,17 +357,16 @@ ul {
 .img-box-about-us img:nth-child(4) {
   position: absolute;
   bottom: 11px;
-  left: 0px;
+  left: 0;
   z-index: 100;
 }
 
-.text-box {
-  padding: 2.625rem 7rem 2.625rem 0;
+.text-box { /*ISSUE: FIND BETER SOLUTION!!!!!!!!*/
+  padding: 2.625rem 5.5rem 2.625rem 0;
 }
 
-.text-box p:nth-child(1),.courses p:nth-child(1),
-.course-type span:nth-child(2),
-.course-type span:nth-child(2) {
+.text-box p:nth-child(1),.courses p:nth-child(1),.course-type span:nth-child(2),
+.course-type span:nth-child(2),.blog-recent p:nth-child(1) {
   font: 14px yekanregular;
   color: #9164E8;
   padding-bottom: 0.5rem;
@@ -386,18 +375,23 @@ ul {
 }
 
 .text-box p:nth-child(2),
-.courses-title p:nth-child(1) {
+.courses-title p:nth-child(1),.blog-recent p:nth-child(2) {
   font: 24px/38px yekanbold;
   color: #212121;
   padding-bottom: 1rem;
 }
 
 .text-box p:nth-child(3),
-p:nth-child(4) {
+p:nth-child(4),.blog-slide p:nth-child(3) {
   font: 14px/19px yekanregular;
   color: #616161;
   padding-bottom: 1rem;
+  text-align: justify;
+
 }
+/* .blog-slide p:nth-child(3) {
+  text-align: justify;
+} */
 
 .read-more {
   width: 150px;
@@ -432,7 +426,7 @@ p:nth-child(4) {
 .branches {
   width: 301px;
   height: 306px;
-  overflow: hidden;
+  overflow: hidden; /*ISSUE: UNTIL SWIPER SOLVED*/
   background-color: #FFFFFF;
   box-shadow: 0px 4px 12px #1815150A;
   border: 1px solid #F6F6F6;
@@ -455,7 +449,7 @@ p:nth-child(4) {
  font-size: 40px;
 }
 
-.branches p:nth-child(2) {
+.branches p:nth-child(2),.course-items p,.blog-slide p:nth-child(2) {
   font: 16px/21px yekanbold;
   color: #212121;
 }
@@ -605,7 +599,7 @@ p:nth-child(4) {
   bottom: -3rem;
   left:-6.375rem;
 }
-
+  /*at-glance section */
 .at-glance-category {
   margin: 7.5rem auto;
 }
@@ -734,6 +728,39 @@ bottom:6px ;
   bottom: -3rem;
   left:-13.5625rem;
 }
+/*blog section*/
+.blog{
+  margin-bottom: 12.5rem;
+  overflow: hidden; /*ISSUE: UNTIL SWIPER SOLVED*/
+}
+.blog-slide{
+box-shadow: 0px 4px 12px #0000000A;
+border: 1px solid #F6F6F6;
+border-radius: 6px;
+padding-bottom: 1.75rem;
+position: relative;
+}
+.blog-slide .to-know span{
+  font: 14px yekanmedium;
+  color: #9164E8;
+  padding-left: 1rem;
+}
+.date-published{
+  width: 79px;
+  height: 29px;
+  background: #9164E8;
+  border-radius: 4px;
+  position: absolute;
+  top: 1rem;
+  left:1rem;
+}
+.date-published p{
+  color: #FAFAFA;
+  font: 14px/29px iranyekanregular;
+  text-align: center;
+  margin: 0;
+
+}
 /*footer*/
 
 .top-footer {
@@ -786,7 +813,7 @@ bottom:6px ;
   margin-bottom: 1.5rem;
 }
 
-.text-box-footer p:nth-child(2) {
+.text-box-footer p:nth-child(2){
   color: #FAFAFA;
   font: 14px/19px iranyekanregular;
   margin-bottom: 1.5rem;
