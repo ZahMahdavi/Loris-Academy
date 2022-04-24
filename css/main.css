@@ -421,12 +421,23 @@ p:nth-child(4),.blog-slide p:nth-child(3) {
   padding-bottom: 0;
   overflow: hidden;
 }
+.swiper-btns {
+  position: relative;
+}
+.next1 ,.prev1 {
+  top: -40px !important;
+  width: auto !important;
+  height: auto !important;
+}
 
+.swiper-wrapper-extera{
+  width: 50%;
+}
 
 .branches {
   width: 301px;
   height: 306px;
-  overflow: hidden; /*ISSUE: UNTIL SWIPER SOLVED*/
+  /* overflow: hidden; ISSUE: UNTIL SWIPER SOLVED */
   background-color: #FFFFFF;
   box-shadow: 0px 4px 12px #1815150A;
   border: 1px solid #F6F6F6;
