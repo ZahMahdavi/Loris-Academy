@@ -23,77 +23,84 @@
 </head>
 
 <body>
-        <!-- Navigation-->
-        <nav class="navbar navbar-expand-lg py-4" id="mainNav">
-        <div class="container">
-          <div class="row">
-              <div class="col-lg-8">
-                <a class="brand-logo navbar-brand py-0" href="#"><img src="img/Loris-Logo-03.png" alt="loris academy"
-                  style="height:3rem;"></a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                  data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false"
-                  aria-label="Toggle navigation">
-                  <span class="navbar-toggler-icon navbar-toggler-icon-img"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-                  <ul class="navbar-nav">
-                    <li class="nav-item nav-item-extera">
-                      <a class="nav-link active" aria-current="page" href="#">صفحه ی اصلی</a>
-                    </li>
-                    <li class="nav-item nav-item-extera">
-                      <a class="nav-link" href="#">درباره ما</a>
-                    </li>
-                    <li class="nav-item nav-item-extera">
-                      <a class="nav-link" href="#">دوره ها</a>
-                    </li>
-                    <li class="nav-item nav-item-extera">
-                      <a class="nav-link" href="#">اساتید</a>
-                    </li>
-                    <li class="nav-item nav-item-extera">
-                      <a class="nav-link" href="#">تماس با ما</a>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-              <div class="col-lg-4">
-                <input class="form-control me-2 hidden" type="search" aria-label="Search">
-                <form class="d-flex justify-content-end align-items-center">
-                  <a class="icon-Group-309 fs-4 px-4" href="#"></a>
-                  <a class="btn border border-1 p-0 d-flex align-items-center" href="#"><span
-                      class="icon-Group-30 fs-4 p-2"></span><span class="login">ورود / ثبت نام</span>
-                  </a>
-                </form>
-              </div>
-          </div>
-        </div>
-      </nav>
-
   <!--header-->
-          <header class="masthead" style="background-image: url('img/MaskGroup1.png');">
-        <div class="container position-relative">
-          <div class="row gx-4 gx-lg-5 justify-content-center">
-            <div class="site-heading">
-          <span>لوریس آکادمی</span>
-            <h1>مرکز برگزاری دوره های آموزشی و کارآموزی</h1>
-          <a class="my-3 btn-details">دوره های آموزشی</a>
-        </div>
+  <header class="masthead">
+    <!-- Navigation-->
+    <nav class="navbar navbar-expand-lg py-4" id="mainNav">
+      <div class="container d-block">
+        <!--ISSUE: d-block???? CORRECT??????-->
+        <div class="row justify-content-between">
+          <div class="col-lg-8 col-12">
+            <div class="menu-mine d-flex">
+              <a class="brand-logo py-0" href="#"><img src="img/Loris-Logo-03.png" alt="loris academy"
+                  style="height:3rem;"></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon navbar-toggler-icon-img"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+                <ul class="navbar-nav">
+                  <li class="nav-item nav-item-extera">
+                    <a class="nav-link active" aria-current="page" href="#">صفحه ی اصلی</a>
+                  </li>
+                  <li class="nav-item nav-item-extera">
+                    <a class="nav-link" href="#">درباره ما</a>
+                  </li>
+                  <li class="nav-item nav-item-extera">
+                    <a class="nav-link" href="#">دوره ها</a>
+                  </li>
+                  <li class="nav-item nav-item-extera">
+                    <a class="nav-link" href="#">اساتید</a>
+                  </li>
+                  <li class="nav-item nav-item-extera">
+                    <a class="nav-link" href="#">تماس با ما</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
           </div>
+          <div class="col-lg-4 col-12">
+            <input class="form-control me-2 hidden" type="search" aria-label="Search">
+            <form class="d-flex justify-content-end align-items-center">
+              <a class="icon-Group-309 fs-4 px-4" href="#"></a>
+              <a class="btn border border-1 p-0 d-flex align-items-center" href="#"><span
+                  class="icon-Group-30 fs-4 p-2"></span><span class="login">ورود / ثبت نام</span>
+              </a>
+            </form>
+          </div>
+        </div>
       </div>
-          </header>  
+    </nav>
+  </header>
+  <div class="main-slide">
+    <div class="container d-flex h-100 align-items-center justify-content-center">
+      <div class="row">
+        <div class="site-heading">
+          <span class="px-auto d-block">لوریس آکادمی</span>
+          <h1 class="px-auto d-inline-block">مرکز برگزاری دوره های آموزشی و کارآموزی</h1>
+          <a class="mx-auto d-block my-3 d-inline-block btn-details">دوره های آموزشی</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
   <!--about-us section-->
   <div class="about-us">
     <div class="container">
       <div class="row">
-        <div class="img-box-about-us col-lg-6 col-12">
-          <div class="text-img-about-us">
-            <h3>لورم ایپسوم متن ساختگی با نامفهوم از چاپ استفاده</h3>
+        <div class="col-6">
+          <div class="img-box-about-us">
+            <div class="text-img-about-us">
+              <h3>لورم ایپسوم متن ساختگی با نامفهوم از چاپ استفاده</h3>
+            </div>
+            <img src="img/MaskGroup3.jpg">
+            <img src="img/MaskGroup2.jpg">
+            <img src="img/MaskGroup4.png">
           </div>
-          <img src="img/MaskGroup3.jpg">
-          <img src="img/MaskGroup2.jpg">
-          <img src="img/MaskGroup4.png">
         </div>
-        <div class="col-lg-6">
-          <div class="text-box-about-us ">
+        <div class="col-6">
+          <div class="text-box-about-us offset-2">
             <span class="d-block">درباره ما</span>
             <span class="d-block">ما را بیشتر بشناسید</span>
             <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است چاپگرها و
@@ -211,160 +218,197 @@
   </div>
 
   <!-- courses section -->
-  <div class="container">
-    <div class="row">
-      <div class="courses">
+  <div class="courses">
+    <div class="container">
+      <div class="row">
         <h3>دوره ها</h3>
         <div class="courses-title d-flex align-items-center justify-content-between">
-          <div>
+          <div class="col-6">
             <span>دوره های بلند مدت</span>
           </div>
           <div class="col-6">
-            <ul class="courses-menu d-flex justify-content-between">
-              <li><a class="courses-menu-link first-link" href="#">همه دسته ها</a></li>
-              <li><a class="courses-menu-link" href="#">بازاریابی و برندینگ</a></li>
-              <li><a class="courses-menu-link" href="#">برنامه نویسی</a></li>
-              <li><a class="courses-menu-link" href="#">UI/UX</a></li>
-              <li><a class="courses-menu-link" href="#">گرافیک</a></li>
-              <li><a class="courses-menu-link" href="#">وردپرس</a></li>
-            </ul>
+            <nav class="navbar navbar-expand-lg py-4">
+              <div class="container d-block">
+                <div class="row justify-content-between">
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon navbar-toggler-icon-img"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                    <ul class="navbar-nav courses-menu">
+                      <li class="nav-item courses-menu-link">
+                        <a class="nav-link text-white" aria-current="page" href="#">همه دسته ها</a>
+                      </li>
+                      <li class="nav-item courses-menu-link">
+                        <a class="nav-link" href="#">بازاریابی و برندینگ</a>
+                      </li>
+                      <li class="nav-item courses-menu-link">
+                        <a class="nav-link" href="#">برنامه نویسی</a>
+                      </li>
+                      <li class="nav-item courses-menu-link">
+                        <a class="nav-link" href="#">UI/UX</a>
+                      </li>
+                      <li class="nav-item courses-menu-link">
+                        <a class="nav-link" href="#">گرافیک</a>
+                      </li>
+                      <li class="nav-item courses-menu-link">
+                        <a class="nav-link" href="#">وردپرس</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </nav>
           </div>
         </div>
-      </div>
-    </div>
-  </div>
-  <div class="container">
-    <div class="row">
-      <div class="courses-boxes px-0 d-flex flex-wrap">
-        <div class="course-box">
-          <figure>
-            <img src="img/MaskGroup5.png" style="width:348px;" alt="course">
-          </figure>
-          <div class="course-items">
-            <h3 class="ps-3">نام دوره اینجا نوشته شود</h3>
-            <div class="d-flex justify-content-between align-items-center">
-              <div class="course-prof d-flex align-items-center py-2 ps-3">
-                <img src="img/MaskGroup14.png" alt="prof">
-                <span class="ps-2 my-0">نام مدرس اینجانوشته شود</span>
+        <div class="courses-boxes px-0">
+          <div class="container">
+            <div class="row d-flex flex-wrap">
+              <div class="col-lg-4 col-12">
+                <div class="course-box">
+                  <figure>
+                    <img src="img/MaskGroup5.png" alt="course">
+                  </figure>
+                  <div class="course-items">
+                    <h3 class="ps-3">نام دوره اینجا نوشته شود</h3>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <div class="course-prof d-flex align-items-center py-2 ps-3">
+                        <img src="img/MaskGroup14.png" alt="prof">
+                        <span class="ps-2 my-0">نام مدرس اینجانوشته شود</span>
+                      </div>
+                      <div class="course-type">
+                        <span class="icon-Group-576"></span>
+                        <span>دوره حضوری</span>
+                      </div>
+                    </div>
+                    <div class="date align-items-start py-2 ps-3">
+                      <span class="icon-Group-324"></span>
+                      <span>1400.2.28 :تاریخ شروع</span>
+                    </div>
+                  </div>
+                </div>
               </div>
-              <div class="course-type">
-                <span class="icon-Group-576"></span>
-                <span>دوره حضوری</span>
+              <div class="col-lg-4 col-12">
+                <div class="course-box">
+                  <figure>
+                    <img src="img/MaskGroup5.png" alt="course">
+                  </figure>
+                  <div class="course-items">
+                    <h3 class="ps-3">نام دوره اینجا نوشته شود</h3>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <div class="course-prof d-flex align-items-center py-2 ps-3">
+                        <img src="img/MaskGroup14.png" alt="prof">
+                        <span class="ps-2 my-0">نام مدرس اینجانوشته شود</span>
+                      </div>
+                      <div class="course-type">
+                        <span class="icon-Group-589"></span>
+                        <span>دوره آنلاین</span>
+                      </div>
+                    </div>
+                    <div class="date align-items-start py-2 ps-3">
+                      <span class="icon-Group-324"></span>
+                      <span>1400.2.28 :تاریخ شروع</span>
+                    </div>
+                  </div>
+                </div>
               </div>
-            </div>
-            <div class="date align-items-start py-2 ps-3">
-              <span class="icon-Group-324"></span>
-              <span>1400.2.28 :تاریخ شروع</span>
-            </div>
-          </div>
-        </div>
-        <div class="course-box">
-          <figure>
-            <img src="img/MaskGroup5.png" style="width:348px;" alt="course">
-          </figure>
-          <div class="course-items">
-            <h3 class="ps-3">نام دوره اینجا نوشته شود</h3>
-            <div class="d-flex justify-content-between align-items-center">
-              <div class="course-prof d-flex align-items-center py-2 ps-3">
-                <img src="img/MaskGroup14.png" alt="prof">
-                <span class="ps-2 my-0">نام مدرس اینجانوشته شود</span>
+              <div class="col-lg-4 col-12">
+                <div class="course-box">
+                  <figure>
+                    <img src="img/MaskGroup5.png" alt="course">
+                  </figure>
+                  <div class="course-items">
+                    <h3 class="ps-3">نام دوره اینجا نوشته شود</h3>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <div class="course-prof d-flex align-items-center py-2 ps-3">
+                        <img src="img/MaskGroup14.png" alt="prof">
+                        <span class="ps-2 my-0">نام مدرس اینجانوشته شود</span>
+                      </div>
+                      <div class="course-type">
+                        <span class="icon-Group-576"></span>
+                        <span>دوره حضوری</span>
+                      </div>
+                    </div>
+                    <div class="date align-items-start py-2 ps-3">
+                      <span class="icon-Group-324"></span>
+                      <span>1400.2.28 :تاریخ شروع</span>
+                    </div>
+                  </div>
+                </div>
               </div>
-              <div class="course-type">
-                <span class="icon-Group-589"></span>
-                <span>دوره آنلاین</span>
+              <div class="col-lg-4 col-12">
+                <div class="course-box">
+                  <figure>
+                    <img src="img/MaskGroup5.png" alt="course">
+                  </figure>
+                  <div class="course-items">
+                    <h3 class="ps-3">نام دوره اینجا نوشته شود</h3>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <div class="course-prof d-flex align-items-center py-2 ps-3">
+                        <img src="img/MaskGroup14.png" alt="prof">
+                        <span class="ps-2 my-0">نام مدرس اینجانوشته شود</span>
+                      </div>
+                      <div class="course-type">
+                        <span class="icon-Group-589"></span>
+                        <span>دوره آنلاین</span>
+                      </div>
+                    </div>
+                    <div class="date align-items-start py-2 ps-3">
+                      <span class="icon-Group-324"></span>
+                      <span>1400.2.28 :تاریخ شروع</span>
+                    </div>
+                  </div>
+                </div>
               </div>
-            </div>
-            <div class="date align-items-start py-2 ps-3">
-              <span class="icon-Group-324"></span>
-              <span>1400.2.28 :تاریخ شروع</span>
-            </div>
-          </div>
-        </div>
-        <div class="course-box">
-          <figure>
-            <img src="img/MaskGroup5.png" style="width:348px;" alt="course">
-          </figure>
-          <div class="course-items">
-            <h3 class="ps-3">نام دوره اینجا نوشته شود</h3>
-            <div class="d-flex justify-content-between align-items-center">
-              <div class="course-prof d-flex align-items-center py-2 ps-3">
-                <img src="img/MaskGroup14.png" alt="prof">
-                <span class="ps-2 my-0">نام مدرس اینجانوشته شود</span>
+              <div class="col-lg-4 col-12">
+                <div class="course-box">
+                  <figure>
+                    <img src="img/MaskGroup5.png" style="width:348px;" alt="course">
+                  </figure>
+                  <div class="course-items">
+                    <h3 class="ps-3">نام دوره اینجا نوشته شود</h3>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <div class="course-prof d-flex align-items-center py-2 ps-3">
+                        <img src="img/MaskGroup14.png" alt="prof">
+                        <span class="ps-2 my-0">نام مدرس اینجانوشته شود</span>
+                      </div>
+                      <div class="course-type">
+                        <span class="icon-Group-576"></span>
+                        <span>دوره حضوری</span>
+                      </div>
+                    </div>
+                    <div class="date align-items-start py-2 ps-3">
+                      <span class="icon-Group-324"></span>
+                      <span>1400.2.28 :تاریخ شروع</span>
+                    </div>
+                  </div>
+                </div>
               </div>
-              <div class="course-type">
-                <span class="icon-Group-576"></span>
-                <span>دوره حضوری</span>
+              <div class="col-lg-4 col-12">
+                <div class="course-box">
+                  <figure>
+                    <img src="img/MaskGroup5.png" style="width:348px;" alt="course">
+                  </figure>
+                  <div class="course-items">
+                    <h3 class="ps-3">نام دوره اینجا نوشته شود</h3>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <div class="course-prof d-flex align-items-center py-2 ps-3">
+                        <img src="img/MaskGroup14.png" alt="prof">
+                        <span class="ps-2 my-0">نام مدرس اینجانوشته شود</span>
+                      </div>
+                      <div class="course-type">
+                        <span class="icon-Group-589"></span>
+                        <span>دوره آنلاین</span>
+                      </div>
+                    </div>
+                    <div class="date align-items-start py-2 ps-3">
+                      <span class="icon-Group-324"></span>
+                      <span>1400.2.28 :تاریخ شروع</span>
+                    </div>
+                  </div>
+                </div>
               </div>
-            </div>
-            <div class="date align-items-start py-2 ps-3">
-              <span class="icon-Group-324"></span>
-              <span>1400.2.28 :تاریخ شروع</span>
-            </div>
-          </div>
-        </div>
-        <div class="course-box">
-          <figure>
-            <img src="img/MaskGroup5.png" style="width:348px;" alt="course">
-          </figure>
-          <div class="course-items">
-            <h3 class="ps-3">نام دوره اینجا نوشته شود</h3>
-            <div class="d-flex justify-content-between align-items-center">
-              <div class="course-prof d-flex align-items-center py-2 ps-3">
-                <img src="img/MaskGroup14.png" alt="prof">
-                <span class="ps-2 my-0">نام مدرس اینجانوشته شود</span>
-              </div>
-              <div class="course-type">
-                <span class="icon-Group-589"></span>
-                <span>دوره آنلاین</span>
-              </div>
-            </div>
-            <div class="date align-items-start py-2 ps-3">
-              <span class="icon-Group-324"></span>
-              <span>1400.2.28 :تاریخ شروع</span>
-            </div>
-          </div>
-        </div>
-        <div class="course-box">
-          <figure>
-            <img src="img/MaskGroup5.png" style="width:348px;" alt="course">
-          </figure>
-          <div class="course-items">
-            <h3 class="ps-3">نام دوره اینجا نوشته شود</h3>
-            <div class="d-flex justify-content-between align-items-center">
-              <div class="course-prof d-flex align-items-center py-2 ps-3">
-                <img src="img/MaskGroup14.png" alt="prof">
-                <span class="ps-2 my-0">نام مدرس اینجانوشته شود</span>
-              </div>
-              <div class="course-type">
-                <span class="icon-Group-576"></span>
-                <span>دوره حضوری</span>
-              </div>
-            </div>
-            <div class="date align-items-start py-2 ps-3">
-              <span class="icon-Group-324"></span>
-              <span>1400.2.28 :تاریخ شروع</span>
-            </div>
-          </div>
-        </div>
-        <div class="course-box">
-          <figure>
-            <img src="img/MaskGroup5.png" style="width:348px;" alt="course">
-          </figure>
-          <div class="course-items">
-            <h3 class="ps-3">نام دوره اینجا نوشته شود</h3>
-            <div class="d-flex justify-content-between align-items-center">
-              <div class="course-prof d-flex align-items-center py-2 ps-3">
-                <img src="img/MaskGroup14.png" alt="prof">
-                <span class="ps-2 my-0">نام مدرس اینجانوشته شود</span>
-              </div>
-              <div class="course-type">
-                <span class="icon-Group-589"></span>
-                <span>دوره آنلاین</span>
-              </div>
-            </div>
-            <div class="date align-items-start py-2 ps-3">
-              <span class="icon-Group-324"></span>
-              <span>1400.2.28 :تاریخ شروع</span>
             </div>
           </div>
         </div>
@@ -406,8 +450,10 @@
         <div class="text-box col-12 col-lg-6">
           <span class="d-block">کارآموزی</span>
           <span class="d-block">به فکر کارآموزی هستید؟</span>
-          <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است چاپگرها و متون
-            بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع
+          <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است چاپگرها و
+            متون
+            بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای
+            متنوع
             با
             هدف بهبود ابزارهای کاربردی می باشد کتابهای</p>
           <a href="#" class="read-more btn">بیشتر بخوانید</a>
@@ -416,94 +462,125 @@
     </div>
   </section>
   <!-- courses section -->
-  <div class="container">
-    <div class="row">
-      <div class="courses">
+  <div class="courses">
+    <div class="container">
+      <div class="row">
         <h3>دوره ها</h3>
         <div class="courses-title d-flex align-items-center justify-content-between">
-          <div>
-            <p>دوره های بلند مدت</p>
+          <div class="col-6">
+            <span>دوره های بلند مدت</span>
           </div>
           <div class="col-6">
-            <ul class="courses-menu d-flex justify-content-between">
-              <li><a class="courses-menu-link first-link" href="#">همه دسته ها</a></li>
-              <li><a class="courses-menu-link" href="#">بازاریابی و برندینگ</a></li>
-              <li><a class="courses-menu-link" href="#">برنامه نویسی</a></li>
-              <li><a class="courses-menu-link" href="#">UI/UX</a></li>
-              <li><a class="courses-menu-link" href="#">گرافیک</a></li>
-              <li><a class="courses-menu-link" href="#">وردپرس</a></li>
-            </ul>
+            <nav class="navbar navbar-expand-lg py-4">
+              <div class="container d-block">
+                <div class="row justify-content-between">
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon navbar-toggler-icon-img"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+                    <ul class="navbar-nav courses-menu">
+                      <li class="nav-item courses-menu-link">
+                        <a class="nav-link text-white" aria-current="page" href="#">همه دسته ها</a>
+                      </li>
+                      <li class="nav-item courses-menu-link">
+                        <a class="nav-link" href="#">بازاریابی و برندینگ</a>
+                      </li>
+                      <li class="nav-item courses-menu-link">
+                        <a class="nav-link" href="#">برنامه نویسی</a>
+                      </li>
+                      <li class="nav-item courses-menu-link">
+                        <a class="nav-link" href="#">UI/UX</a>
+                      </li>
+                      <li class="nav-item courses-menu-link">
+                        <a class="nav-link" href="#">گرافیک</a>
+                      </li>
+                      <li class="nav-item courses-menu-link">
+                        <a class="nav-link" href="#">وردپرس</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </nav>
           </div>
         </div>
-      </div>
-    </div>
-  </div>
-  <div class="container">
-    <div class="row">
-      <div class="courses-boxes px-0 d-flex flex-wrap">
-        <div class="course-box">
-          <figure>
-            <img src="img/MaskGroup5.png" style="width:348px;" alt="course">
-          </figure>
-          <div class="course-items">
-            <h3 class="ps-3">نام دوره اینجا نوشته شود</h3>
-            <div class="d-flex justify-content-between align-items-center">
-              <div class="course-prof d-flex align-items-center py-2 ps-3">
-                <img src="img/MaskGroup14.png" alt="prof">
-                <span class="ps-2 my-0">نام مدرس اینجانوشته شود</span>
+        <div class="courses-boxes px-0 d-flex flex-wrap">
+        <div class="container">
+          <div class="row">
+              <div class="col-lg-4 col-12">
+                <div class="course-box">
+                  <figure>
+                    <img src="img/MaskGroup5.png" style="width:348px;" alt="course">
+                  </figure>
+                  <div class="course-items">
+                    <h3 class="ps-3">نام دوره اینجا نوشته شود</h3>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <div class="course-prof d-flex align-items-center py-2 ps-3">
+                        <img src="img/MaskGroup14.png" alt="prof">
+                        <span class="ps-2 my-0">نام مدرس اینجانوشته شود</span>
+                      </div>
+                      <div class="course-type">
+                        <span class="icon-Group-576"></span>
+                        <span>دوره حضوری</span>
+                      </div>
+                    </div>
+                    <div class="date align-items-start py-2 ps-3">
+                      <span class="icon-Group-324"></span>
+                      <span>1400.2.28 :تاریخ شروع</span>
+                    </div>
+                  </div>
+                </div>
               </div>
-              <div class="course-type">
-                <span class="icon-Group-576"></span>
-                <span>دوره حضوری</span>
+              <div class="col-lg-4 col-12">
+                <div class="course-box">
+                  <figure>
+                    <img src="img/MaskGroup5.png" alt="course">
+                  </figure>
+                  <div class="course-items">
+                    <h3 class="ps-3">نام دوره اینجا نوشته شود</h3>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <div class="course-prof d-flex align-items-center py-2 ps-3">
+                        <img src="img/MaskGroup14.png" alt="prof">
+                        <span class="ps-2 my-0">نام مدرس اینجانوشته شود</span>
+                      </div>
+                      <div class="course-type">
+                        <span class="icon-Group-589"></span>
+                        <span>دوره آنلاین</span>
+                      </div>
+                    </div>
+                    <div class="date align-items-start py-2 ps-3">
+                      <span class="icon-Group-324"></span>
+                      <span>1400.2.28 :تاریخ شروع</span>
+                    </div>
+                  </div>
+                </div>
               </div>
-            </div>
-            <div class="date align-items-start py-2 ps-3">
-              <span class="icon-Group-324"></span>
-              <span>1400.2.28 :تاریخ شروع</span>
-            </div>
-          </div>
-        </div>
-        <div class="course-box">
-          <figure>
-            <img src="img/MaskGroup5.png" style="width:348px;" alt="course">
-          </figure>
-          <div class="course-items">
-            <h3 class="ps-3">نام دوره اینجا نوشته شود</h3>
-            <div class="d-flex justify-content-between align-items-center">
-              <div class="course-prof d-flex align-items-center py-2 ps-3">
-                <img src="img/MaskGroup14.png" alt="prof">
-                <span class="ps-2 my-0">نام مدرس اینجانوشته شود</span>
+              <div class="col-lg-4 col-12">
+                <div class="course-box">
+                  <figure>
+                    <img src="img/MaskGroup5.png" alt="course">
+                  </figure>
+                  <div class="course-items">
+                    <h3 class="ps-3">نام دوره اینجا نوشته شود</h3>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <div class="course-prof d-flex align-items-center py-2 ps-3">
+                        <img src="img/MaskGroup14.png" alt="prof">
+                        <span class="ps-2 my-0">نام مدرس اینجانوشته شود</span>
+                      </div>
+                      <div class="course-type">
+                        <span class="icon-Group-589"></span>
+                        <span>دوره آنلاین</span>
+                      </div>
+                    </div>
+                    <div class="date align-items-start py-2 ps-3">
+                      <span class="icon-Group-324"></span>
+                      <span>1400.2.28 :تاریخ شروع</span>
+                    </div>
+                  </div>
+                </div>
               </div>
-              <div class="course-type">
-                <span class="icon-Group-589"></span>
-                <span>دوره آنلاین</span>
-              </div>
-            </div>
-            <div class="date align-items-start py-2 ps-3">
-              <span class="icon-Group-324"></span>
-              <span>1400.2.28 :تاریخ شروع</span>
-            </div>
-          </div>
-        </div>
-        <div class="course-box">
-          <figure>
-            <img src="img/MaskGroup5.png" style="width:348px;" alt="course">
-          </figure>
-          <div class="course-items">
-            <h3 class="ps-3">نام دوره اینجا نوشته شود</h3>
-            <div class="d-flex justify-content-between align-items-center">
-              <div class="course-prof d-flex align-items-center py-2 ps-3">
-                <img src="img/MaskGroup14.png" alt="prof">
-                <span class="ps-2 my-0">نام مدرس اینجانوشته شود</span>
-              </div>
-              <div class="course-type">
-                <span class="icon-Group-589"></span>
-                <span>دوره آنلاین</span>
-              </div>
-            </div>
-            <div class="date align-items-start py-2 ps-3">
-              <span class="icon-Group-324"></span>
-              <span>1400.2.28 :تاریخ شروع</span>
             </div>
           </div>
         </div>
@@ -545,11 +622,14 @@
             <div class="sample-box-document">
               <div class="bg-white p-3 my-3 d-flex">
                 <img src="img/MaskGroup10.png" alt="intern">
-                <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است</p>
+                <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک
+                  است</p>
               </div>
               <div class="bg-black p-3 my-3 d-flex">
                 <img src="img/Group451.png" alt="intern">
-                <p class="text-white">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان
+                <p class="text-white">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده
+                  از
+                  طراحان
                   گرافیک است</p>
               </div>
             </div>
@@ -563,11 +643,18 @@
         <div class="text-box ps-2 mb-2 col-12 col-lg-6">
           <span class="d-block">مدارک</span>
           <span class="d-block">آیا شما هم در مورد مدارک نیاز به مشاوره دارید؟</span>
-          <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است چاپگرها و متون
-            بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع
+          <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است
+            چاپگرها و
+            متون
+            بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و
+            کاربردهای
+            متنوع
             با
-            هدف بهبود ابزارهای کاربردی می باشد کتابهای زیادی در شصت و سه درصد گذشته حال و آینده شناخت فراوان جامعه و
-            متخصصان را می طلبد تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی</p>
+            هدف بهبود ابزارهای کاربردی می باشد کتابهای زیادی در شصت و سه درصد گذشته حال و آینده شناخت فراوان
+            جامعه
+            و
+            متخصصان را می طلبد تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان
+            خلاقی</p>
           <a href="#" class="read-more btn">مشاوره</a>
         </div>
       </div>
@@ -577,134 +664,139 @@
   <div class="blog">
     <div class="container">
       <div class="d-flex justify-content-between">
-      <div class="blog-recent d-flex flex-column">
-        <span>وبلاگ</span>
-        <span>آخرین مطالب وبلاگ</span>
-        <!-- ISSUE:  SLIDER TAB SHOULD PLACE HERE!!!!!!!!!!! -->
+        <div class="blog-recent d-flex flex-column">
+          <span>وبلاگ</span>
+          <span>آخرین مطالب وبلاگ</span>
+          <!-- ISSUE:  SLIDER TAB SHOULD PLACE HERE!!!!!!!!!!! -->
+        </div>
+        <div class="swiper-btns">
+          <div class="swiper-button-next next1 align-it"><i class="icon-Group-315 fw-bolder"></i></div>
+          <div class="swiper-button-prev prev1"><i class="icon-Group-315 fw-bolder"></i></div>
+        </div>
       </div>
-      <div class="swiper-btns">
-        <div class="swiper-button-next next1 align-it"><i class="icon-Group-315 fw-bolder"></i></div>
-        <div class="swiper-button-prev prev1"><i class="icon-Group-315 fw-bolder"></i></div>
-      </div>
-    </div>
     </div>
 
-      <!-- Slider main container -->
-      <div class="container">
-        <div class="row">
-          <div class="swiper mySwiper overflow-hidden">
-            <!-- Additional required wrapper -->
-            <div class="swiper-wrapper d-flex">
-              <!-- Slides -->
-              <div class="swiper-slide">
-                  <div class="blog-slide">
-                    <figure class="blog-img m-0">
-                      <img src="img/w.png">
-                    </figure>
-                    <div class="blog-text-box">
-                      <h3 class="px-3 py-2 m-0">عنوان وبلاگ اینجا نوشته شود</h3>
-                      <p class="p-3 m-0">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از
-                        طراحان
-                        گرافیک است چاپگرها و
-                        متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی</p>
-                      <a class="to-know d-flex justify-content-end" href="#">
-                        <span>بیشتر بدانید</span>
-                        <span class="icon-Group-315 fw-bolder"></span>
-                      </a>
-                    </div>
-                    <div class="date-published">
-                      <span>8 اردیبهشت</span>
-                    </div>
-                  </div>
+    <!-- Slider main container -->
+    <div class="container">
+      <div class="row">
+        <div class="swiper mySwiper overflow-hidden">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper d-flex">
+            <!-- Slides -->
+            <div class="swiper-slide">
+              <div class="blog-slide">
+                <figure class="blog-img m-0">
+                  <img src="img/w.png">
+                </figure>
+                <div class="blog-text-box">
+                  <h3 class="px-3 py-2 m-0">عنوان وبلاگ اینجا نوشته شود</h3>
+                  <p class="p-3 m-0">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده
+                    از
+                    طراحان
+                    گرافیک است چاپگرها و
+                    متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی</p>
+                  <a class="to-know d-flex justify-content-end" href="#">
+                    <span>بیشتر بدانید</span>
+                    <span class="icon-Group-315 fw-bolder"></span>
+                  </a>
+                </div>
+                <div class="date-published">
+                  <span>8 اردیبهشت</span>
+                </div>
               </div>
-              <div class="swiper-slide">
-                  <div class="blog-slide">
-                    <figure class="blog-img m-0">
-                      <img src="img/w.png">
-                    </figure>
-                    <div class="blog-text-box">
-                      <h3 class="px-3 py-2 m-0">عنوان وبلاگ اینجا نوشته شود</h3>
-                      <p class="p-3 m-0">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از
-                        طراحان
-                        گرافیک است چاپگرها و
-                        متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی</p>
-                      <a class="to-know d-flex justify-content-end" href="#">
-                        <span>بیشتر بدانید</span>
-                        <span class="icon-Group-315 fw-bolder"></span>
-                      </a>
-                    </div>
-                    <div class="date-published">
-                      <span>8 اردیبهشت</span>
-                    </div>
-                  </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="blog-slide">
+                <figure class="blog-img m-0">
+                  <img src="img/w.png">
+                </figure>
+                <div class="blog-text-box">
+                  <h3 class="px-3 py-2 m-0">عنوان وبلاگ اینجا نوشته شود</h3>
+                  <p class="p-3 m-0">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده
+                    از
+                    طراحان
+                    گرافیک است چاپگرها و
+                    متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی</p>
+                  <a class="to-know d-flex justify-content-end" href="#">
+                    <span>بیشتر بدانید</span>
+                    <span class="icon-Group-315 fw-bolder"></span>
+                  </a>
+                </div>
+                <div class="date-published">
+                  <span>8 اردیبهشت</span>
+                </div>
               </div>
-              <div class="swiper-slide">
-                  <div class="blog-slide">
-                    <figure class="blog-img m-0">
-                      <img src="img/w.png">
-                    </figure>
-                    <div class="blog-text-box">
-                      <h3 class="px-3 py-2 m-0">عنوان وبلاگ اینجا نوشته شود</h3>
-                      <p class="p-3 m-0">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از
-                        طراحان
-                        گرافیک است چاپگرها و
-                        متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی</p>
-                      <a class="to-know d-flex justify-content-end" href="#">
-                        <span>بیشتر بدانید</span>
-                        <span class="icon-Group-315 fw-bolder"></span>
-                      </a>
-                    </div>
-                    <div class="date-published">
-                      <span>8 اردیبهشت</span>
-                    </div>
-                  </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="blog-slide">
+                <figure class="blog-img m-0">
+                  <img src="img/w.png">
+                </figure>
+                <div class="blog-text-box">
+                  <h3 class="px-3 py-2 m-0">عنوان وبلاگ اینجا نوشته شود</h3>
+                  <p class="p-3 m-0">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده
+                    از
+                    طراحان
+                    گرافیک است چاپگرها و
+                    متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی</p>
+                  <a class="to-know d-flex justify-content-end" href="#">
+                    <span>بیشتر بدانید</span>
+                    <span class="icon-Group-315 fw-bolder"></span>
+                  </a>
+                </div>
+                <div class="date-published">
+                  <span>8 اردیبهشت</span>
+                </div>
               </div>
-              <div class="swiper-slide">
-                  <div class="blog-slide">
-                    <figure class="blog-img m-0">
-                      <img src="img/w.png">
-                    </figure>
-                    <div class="blog-text-box">
-                      <h3 class="px-3 py-2 m-0">عنوان وبلاگ اینجا نوشته شود</h3>
-                      <p class="p-3 m-0">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از
-                        طراحان
-                        گرافیک است چاپگرها و
-                        متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی</p>
-                      <a class="to-know d-flex justify-content-end" href="#">
-                        <span>بیشتر بدانید</span>
-                        <span class="icon-Group-315 fw-bolder"></span>
-                      </a>
-                    </div>
-                    <div class="date-published">
-                      <span>8 اردیبهشت</span>
-                    </div>
-                  </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="blog-slide">
+                <figure class="blog-img m-0">
+                  <img src="img/w.png">
+                </figure>
+                <div class="blog-text-box">
+                  <h3 class="px-3 py-2 m-0">عنوان وبلاگ اینجا نوشته شود</h3>
+                  <p class="p-3 m-0">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده
+                    از
+                    طراحان
+                    گرافیک است چاپگرها و
+                    متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی</p>
+                  <a class="to-know d-flex justify-content-end" href="#">
+                    <span>بیشتر بدانید</span>
+                    <span class="icon-Group-315 fw-bolder"></span>
+                  </a>
+                </div>
+                <div class="date-published">
+                  <span>8 اردیبهشت</span>
+                </div>
               </div>
-              <div class="swiper-slide">
-                  <div class="blog-slide">
-                    <figure class="blog-img m-0">
-                      <img src="img/w.png">
-                    </figure>
-                    <div class="blog-text-box">
-                      <h3 class="px-3 py-2 m-0">عنوان وبلاگ اینجا نوشته شود</h3>
-                      <p class="p-3 m-0">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از
-                        طراحان
-                        گرافیک است چاپگرها و
-                        متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی</p>
-                      <a class="to-know d-flex justify-content-end" href="#">
-                        <span>بیشتر بدانید</span>
-                        <span class="icon-Group-315 fw-bolder"></span>
-                      </a>
-                    </div>
-                    <div class="date-published">
-                      <span>8 اردیبهشت</span>
-                    </div>
-                  </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="blog-slide">
+                <figure class="blog-img m-0">
+                  <img src="img/w.png">
+                </figure>
+                <div class="blog-text-box">
+                  <h3 class="px-3 py-2 m-0">عنوان وبلاگ اینجا نوشته شود</h3>
+                  <p class="p-3 m-0">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده
+                    از
+                    طراحان
+                    گرافیک است چاپگرها و
+                    متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی</p>
+                  <a class="to-know d-flex justify-content-end" href="#">
+                    <span>بیشتر بدانید</span>
+                    <span class="icon-Group-315 fw-bolder"></span>
+                  </a>
+                </div>
+                <div class="date-published">
+                  <span>8 اردیبهشت</span>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
+    </div>
   </div>
   <!-- footer -->
   <footer class="main-footer">
@@ -744,11 +836,14 @@
           </div>
           <div class="text-box-footer col-4">
             <span class="d-block">لورم ایپسوم ساختگی با تولید سادگی</span>
-            <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است متون
+            <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است
+              متون
               بلکه
-              روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای
+              روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و
+              کاربردهای
               متنوع با
-              هدف بهبود ابزارهای کاربردی می باشد کتابهای زیادی در شصت و سه درصد گذشته حال و آینده شناخت فراوان
+              هدف بهبود ابزارهای کاربردی می باشد کتابهای زیادی در شصت و سه درصد گذشته حال و آینده شناخت
+              فراوان
               جامعه و
               متخصصان را می طلبد تا با</p>
           </div>

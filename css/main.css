@@ -227,34 +227,35 @@ ul {
   list-style: none;
 }
 
-S
-
 /* nav */
-#main-nav{
+.masthead{
   position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 1030;
-}
-header.masthead{
-  /* background-image: url('../img/MaskGroup1@2x.png');
-  background-size: cover;
-  background-position: center; */
-  height: 100vh;
-  position: relative;
+  top: 0;
+  width:100%;
+  z-index: 99999;
 }
 
-header.masthead:before{
+
+
+.main-slide{
+  position: relative;
+  background-image: url('../img/MaskGroup1.png');
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 100vh;
+
+}
+
+.main-slide:before{
     content: "";
     position: absolute;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: #212121;
+    background-color: #212121 ;
     opacity: 0.43;
-    z-index: 10;
 }
 
 
@@ -262,7 +263,8 @@ header.masthead:before{
   background-image: url('../img/toggler.svg');
  }
 
-.nav-link,.main-slide span:nth-child(odd),
+
+.nav-link,.site-heading span:nth-child(1),
 .btn-details {
   font: 14px/19px yekanregular;
   color: #fff;
@@ -290,15 +292,6 @@ header.masthead:before{
   line-height: 3rem;
 }
 
-.main-slide {
-
-position: relative;
-width:354px;
-height: auto;
-
-
-}
-
 .site-heading h1 {
   font: 34px/46px yekanbold;
   color: #fff;
@@ -307,17 +300,6 @@ height: auto;
   padding-bottom: 1rem;
 }
 
-.site-heading span:nth-child(3) {
-  width: 125px;
-  height: 18px;
-  overflow: hidden;
-}
-
-.main-slide span:nth-child(4) {
-  width: 254px;
-  height: 44px;
-  overflow: hidden;
-}
 
 .btn-details {
   background-color: #9164E8;
@@ -328,13 +310,14 @@ height: auto;
 }
 /* about-us section */
 .about-us {
+  position: relative;
   margin: 7rem auto;
 }
 
 .img-box-about-us {
-  position: relative;
-  width: 558px;
-  height:435px;
+  position: absolute;
+  width: 42%;
+  height:100%;
   }
 
 .text-img-about-us{
@@ -369,13 +352,16 @@ padding: 36px 25px 36px 26px;
 
 .img-box-about-us img:nth-child(4) {
   position: absolute;
-  bottom: 11px;
+  bottom: 1rem;
   left: 0;
   z-index: 100;
 }
 
-.text-box-about-us { /*ISSUE: FIND BETER SOLUTION!!!!!!!!*/
-  padding: 2.625rem 5.5rem 2.625rem 0;
+.text-box-about-us {
+  width: 80%;
+  height:100%;
+   /*ISSUE: FIND BETER SOLUTION!!!!!!!!*/
+  padding: 2.4rem 0;
 }
 
 .text-box-about-us span:nth-child(1),.text-box span:nth-child(1),.courses h3,.course-type span:nth-child(2),
@@ -491,7 +477,7 @@ padding: 36px 25px 36px 26px;
 }
 
 .branches p:nth-child(3),
-.courses-menu-link {
+.courses-menu-link a{
   font: 14px/19px yekanregular;
   color: #9E9E9E;
 }
@@ -511,14 +497,11 @@ padding: 36px 25px 36px 26px;
   text-align: center;
 }
 
-.first-link {
-  color: #FAFAFA;
-}
 
 .course-box {
   box-shadow: 0px 4px 12px #1815150A;
   border: 1px solid #F6F6F6;
-  margin: 13px 0 13px 24px;
+  margin: 0.875rem 0 0.875rem 0;
 }
 
 /* .img-course img{
@@ -804,6 +787,9 @@ height: auto;
 
 }
 /*footer*/
+.main-footer{
+width: 100%;
+}
 
 .top-footer {
   background-color: #404040;
