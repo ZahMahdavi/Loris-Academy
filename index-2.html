@@ -139,7 +139,7 @@
                 طراحان خلاقی</p>
             </div>
             <div class="swiper-btns">
-              <div class="swiper-button-next next1 align-it"><i class="icon-Group-315 fw-bolder"></i></div>
+              <div class="swiper-button-next next1"><i class="icon-Group-315 fw-bolder"></i></div>
               <div class="swiper-button-prev prev1"><i class="icon-Group-315 fw-bolder"></i></div>
             </div>
           </article>
@@ -151,7 +151,7 @@
             <div class="swiper-wrapper d-flex">
               <!-- Slides -->
               <div class="swiper-slide">
-                <article class="branches d-flex flex-column col-lg-6 col-12">
+                <article class="branches d-flex flex-column col-12">
                   <div class="icon-bg">
                     <span class="icon-graduation-cap"></span>
                   </div>
@@ -166,7 +166,7 @@
                 </article>
               </div>
               <div class="swiper-slide">
-                <article class="branches d-flex flex-column col-lg-6 col-12">
+                <article class="branches d-flex flex-column col-12">
                   <div class="icon-bg">
                     <span class="icon-Page-1"></span>
                   </div>
@@ -181,7 +181,7 @@
                 </article>
               </div>
               <div class="swiper-slide">
-                <article class="branches d-flex flex-column col-lg-6 col-12">
+                <article class="branches d-flex flex-column col-12">
                   <div class="icon-bg">
                     <span class="icon-creativity"></span>
                   </div>
@@ -196,7 +196,7 @@
                 </article>
               </div>
               <div class="swiper-slide">
-                <article class="branches d-flex flex-column col-lg-6 col-12">
+                <article class="branches d-flex flex-column col-12">
                   <div class="icon-bg">
                     <span class="icon-Page-1"></span>
                   </div>
@@ -877,7 +877,13 @@
       navigation: {
         nextEl: ".swiper-button-next",
         prevEl: ".swiper-button-prev",
+        slidesPerView: 2,
+        spaceBetween: 24,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
       },
+    },
     });
   </script>
 </body>
