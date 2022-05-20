@@ -391,8 +391,7 @@ ul {
 
 
 .text-box-about-us span:nth-child(1),
-.text-box span:nth-child(1),
-.courses h3,
+.text-box span:nth-child(1),.intro-text-box span:nth-child(1),.courses h3,
 .course-type span:nth-child(2),
 .course-type span:nth-child(2),
 .blog-recent span:nth-child(1) {
@@ -404,8 +403,7 @@ ul {
 }
 
 .text-box-about-us span:nth-child(2),
-.text-box span:nth-child(2),
-.courses-title span,
+.text-box span:nth-child(2),.intro-text-box span:nth-child(2),.courses-title span,
 .blog-recent span:nth-child(2) {
   font: 24px/38px yekanbold;
   color: #212121;
@@ -413,7 +411,7 @@ ul {
 }
 
 .text-box-about-us p,
-.text-box p,
+.text-box p,.intro-text-box p,
 .blog-text-box p {
   font: 14px/19px yekanregular;
   color: #616161;
@@ -437,59 +435,73 @@ ul {
   padding: 0;
 
 }
+.categories{
+margin-bottom: 8.75rem;
+margin-top: 1.5rem;
+}
 
 .introduction {
   background-image: url('../img/MaskGroup6.png');
   background-repeat: no-repeat;
   background-position: right;
+  position: relative;
 }
 
-.introduction .text-box {
+.introduction .intro-text-box {
   padding-right: 0;
 }
 
-.intro-text {
-  width: 348px;
-  height: 111px;
+.intro-text-box {
+  width: 77%;
+  height: auto;
   padding-bottom: 0;
   overflow: hidden;
 }
 
-/* .swiper-btns {
-  position: relative;
-} */
+
 .next1,
 .prev1 {
-  bottom: 59px !important;
-  width: 48px;
-  height: 48px;
+  width: 3rem;
+  height: 3rem;
   box-shadow: 0px 4px 12px #1B17170D;
   border: 1px solid #E0E0E0;
   border-radius: 4px;
   display: inline-block;
+  color: #E0E0E0;
+}
+.next1:hover,
+.prev1:hover {
+background-color: #9164E8;
 }
 
-.next1 i,
-.prev1 i {
-  font-size: 1.5rem;
-  color: black;
-  /*ISSUE: CHAGE THE COLOR!!!*/
-  line-height: 48px;
-
+.next1 {
+position: absolute;
+right: 0;
+top: 100%!important;
 }
+.prev1 {
+  position: absolute;
+  right: 4rem;
+  top: 100%!important;
+  }
+  
 
 
 
 .branches {
   width: 100%;
-  height:auto;
+  height:initial;
   overflow: hidden;
   /*ISSUE: UNTIL SWIPER SOLVED */
   background-color: #FFFFFF;
   box-shadow: 0px 4px 12px #1815150A;
   border: 1px solid #F6F6F6;
+  margin-top:1rem;
+  margin-bottom: 2rem;
+ 
+}
+.branch-box{
   padding: 1.5rem 1.5rem 2rem;
-  margin: 19px 12px 35px;
 }
 
 .icon-bg {
@@ -515,8 +527,9 @@ ul {
 
 .branches p:nth-child(3),
 .courses-menu-link a {
-  font: 14px/19px yekanregular;
+  font: 14px/22px yekanregular;
   color: #9E9E9E;
+  text-align: justify;
 }
 
 .to-know span:nth-child(1) {
@@ -663,12 +676,15 @@ ul {
 
 /*at-glance section */
 .at-glance-category {
-  margin: 7.5rem auto;
+  margin: 7.5rem 23%;
 }
-
+.at-glance{
+  width: 100%;
+  height: auto;
+}
 .at-glance-box {
-  width: 233px;
-  height: 174px;
+  width: 100%;
+  height: auto;
   background: #FFFFFF;
   box-shadow: 0px 4px 12px #1815150A;
   border: 1px solid #F6F6F6;
@@ -810,19 +826,50 @@ ul {
   overflow: hidden;
   /*ISSUE: UNTIL SWIPER SOLVED*/
 }
+.blog-box{
+  position: relative;
+}
+.next2,
+.prev2 {
+  width: 3rem;
+  height: 3rem;
+  box-shadow: 0px 4px 12px #1B17170D;
+  border: 1px solid #E0E0E0;
+  border-radius: 4px;
+  display: inline-block;
+  color: #E0E0E0;
+}
+.next2:hover,
+.prev2:hover {
+background-color: #9164E8;
+}
+.next2 {
+  position: absolute;
+  right: 90%;
+
+  }
+.prev2 {
+    position: absolute;
+    left:0;
+    }
 
 .blog-slide {
-  width: 348px;
+  width: 100%;
+  height:initial;
   box-shadow: 0px 4px 12px #0000000A;
   border: 1px solid #F6F6F6;
   border-radius: 6px;
   padding-bottom: 1.75rem;
-  margin: 1.75rem 0.75rem;
+  margin-top: 1.75rem;
+  margin-bottom:1.75rem;
   position: relative;
+}
+.blog-slide-box {
+
 }
 
 .blog-img {
-  width: 348px;
+  width: 100%;
   height: auto;
 }
 
