@@ -282,7 +282,9 @@ ul {
 .navbar-toggler-icon-img {
   background-image: url('../img/toggler.svg');
 }
-
+.hidden{
+display: none;
+}
 
 .nav-link,
 .site-heading span:nth-child(1),
@@ -311,11 +313,9 @@ ul {
   margin-left: 50px;
 }
 
-.form-control-extera a {
-  padding-left: 0.75rem;
-  line-height: 3rem;
-}
-
+/* input::placeholder{
+  visibility: hidden;
+} */
 .site-heading h1 {
   font: 34px/46px yekanbold;
   color: #fff;
@@ -327,10 +327,14 @@ ul {
 
 .btn-details {
   background-color: #9164E8;
-  width: 10.625rem;
-  height: 3rem;
+  width: 9.375rem;
+  height: 2.5rem;
   line-height: 3rem;
   border-radius: 4px;
+}
+.site-heading a {
+  width: 10.625rem;
+  height: 3rem;
 }
 
 /* about-us section */
@@ -451,9 +455,6 @@ margin-top: 1.5rem;
   position: relative;
 }
 
-.introduction .intro-text-box {
-  padding-right: 0;
-}
 
 .intro-text-box {
   width: 77%;
@@ -461,8 +462,17 @@ margin-top: 1.5rem;
   padding-bottom: 0;
   overflow: hidden;
 }
-
-
+.swiper-btns-box{
+width: 8rem;
+height: auto;
+display:flex;
+justify-content: space-between;
+}
+.introduction>.swiper-btns-box{
+position: absolute;
+right: 0;
+bottom: 0!important;
+}
 .next1,
 .prev1 {
   width: 3rem;
@@ -472,13 +482,16 @@ margin-top: 1.5rem;
   border-radius: 4px;
   display: inline-block;
   color: #E0E0E0;
+  text-align: center;
+  --swiper-navigation-size: 24px;
+  line-height: 3rem;
 }
 .next1:hover,
 .prev1:hover {
 background-color: #9164E8;
 }
 
-.next1 {
+/* .next1 {
 position: absolute;
 right: 0;
 top: 100%!important;
@@ -487,14 +500,13 @@ top: 100%!important;
   position: absolute;
   right: 4rem;
   top: 100%!important;
-  }
+  } */
   
 
 
 
 .branches {
   width: 100%;
-  height:initial;
   overflow: hidden;
   /*ISSUE: UNTIL SWIPER SOLVED */
   background-color: #FFFFFF;
@@ -502,8 +514,29 @@ top: 100%!important;
   border: 1px solid #F6F6F6;
   margin-top:1rem;
   margin-bottom: 2rem;
+  position: relative;
  
 }
+
+.branches:after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 0px;
+  background: #9164E8;
+}
+
+.branches:hover {
+  color: #9164E8;
+}
+
+.branches:hover:after{
+  height: 6px;
+  border-radius: 0px 0px 6px 6px;
+}
+
 .branch-box{
   padding: 1.5rem 1.5rem 2rem;
 }
@@ -541,29 +574,67 @@ top: 100%!important;
   color: #212121;
 }
 
+
+
+
+
+
 /*courses section*/
-.courses-menu li:nth-child(1) {
+.courses-menu-link :hover {
   width: 94px;
   height: 34px;
   background-color: #9164E8;
   border-radius: 4px;
-  line-height: 34px;
+  font: 14px/22px yekanregular;
+  color: #FAFAFA;
   text-align: center;
+  transition: none;
+
 }
 
 
 .course-box {
+  width: 100%;
   box-shadow: 0px 4px 12px #1815150A;
   border: 1px solid #F6F6F6;
   margin: 0.875rem 0 0.875rem 0;
+  }
+  .course-box-link{
+    position: relative;
+    display:table;
+  }
+.course-box-link{
+  display:table-cell; 
+  vertical-align:middle
+}
+.hov-text-course {
+  background: rgb(0, 0, 0);
+	color: #fff;
+	opacity: 0;
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 100%;
+	height: 100%;
+  
 }
 
-/* .img-course img{
-  width: 325px;
-  height: 255px;
-} */
-.course-prof p,
-.date span:nth-child(2) {
+.hov-text-course:hover{
+  background: rgb(0, 0, 0,0.8);
+	color: #fff;
+	opacity: 1;
+	position: absolute;
+	top: 50%;
+	right: 0;
+	width: 100%;
+	height: 50%;
+  font: 24px/38px yekanbold;
+  color: #9164E8;
+  text-align: center;
+}
+
+.course-prof span:nth-child(2),
+.date span:nth-child(2),.date span:nth-child(3),.date span:nth-child(4) {
   font: 14px/19px yekanregular;
   color: #424242;
 }
@@ -580,14 +651,16 @@ top: 100%!important;
 }
 
 .box-internship {
+  width: 100%;
+  height: auto;
   position: relative;
 
 }
 
 
 .img-box-internship {
-  width: 364px;
-  height: 206px;
+  width: 100%;
+  height: auto;
   background-color: #FFFFFF;
   border-radius: 6px;
   box-shadow: 0px 4px 12px #1815150A;
@@ -665,17 +738,15 @@ top: 100%!important;
   padding-top: 0.5625rem;
   padding-bottom: 1.5rem;
 }
-
+.internship .text-box {
+  margin-bottom: 2.5rem;
+  margin-top: 2rem;
+}
 .logo-op-1 {
-  width: 275px;
-  height: 119px;
-  background-image: url('../img/Loris-Logo-03@2x.png');
-  background-size: cover;
-  background-position: center;
   opacity: 0.02;
   position: absolute;
-  bottom: -3rem;
-  left: -6.375rem;
+  bottom:0;
+  right: 0;
 }
 
 /*at-glance section */
@@ -693,7 +764,7 @@ top: 100%!important;
   box-shadow: 0px 4px 12px #1815150A;
   border: 1px solid #F6F6F6;
   border-radius: 6px;
-  margin: 0 0.75rem;
+  margin-bottom: 1.5rem;
 }
 
 .at-glance-box div {
@@ -722,6 +793,8 @@ top: 100%!important;
 .document {
   margin-bottom: 8.625rem;
 }
+
+/*ISSUE:BOXES SIZE BY PERCENTAGE CAUSES CHANGING THE POSITION OF OTHER BOXES??????? */
 
 .box-document {
   width: 348px;
@@ -776,7 +849,7 @@ top: 100%!important;
 }
 
 .form-inline {
-  width: 86.2%;
+  width: 86%;
   background: #F6F6F6;
   border-radius: 4px;
   position: absolute;
@@ -788,12 +861,10 @@ top: 100%!important;
 .form-inline input {
   background-color: #F6F6F6;
 }
+:placeholder-shown {
+  border: 2px solid silver;
+}
 
-/* .form-control::placeholder{
-  color:#BDBDBD;
-  font-size: 16px;
-  font-family: iranyekanmedium;
-  } */
 .send-btn {
   width: 30px;
   height: 30px;
@@ -833,29 +904,12 @@ top: 100%!important;
 .blog-box{
   position: relative;
 }
-.next2,
-.prev2 {
-  width: 3rem;
-  height: 3rem;
-  box-shadow: 0px 4px 12px #1B17170D;
-  border: 1px solid #E0E0E0;
-  border-radius: 4px;
-  display: inline-block;
-  color: #E0E0E0;
-}
-.next2:hover,
-.prev2:hover {
-background-color: #9164E8;
-}
-.next2 {
-  position: absolute;
-  right: 90%;
 
+.blog .swiper-btns-box{
+  position: absolute;
+  left: 1.5rem;
+  top:50%!important;
   }
-.prev2 {
-    position: absolute;
-    left:0;
-    }
 
 .blog-slide {
   width: 100%;
@@ -878,7 +932,7 @@ background-color: #9164E8;
 }
 
 .blog-text-box {
-  width: 348px;
+  width: 100%;
 }
 
 .blog-text-box .to-know span {
@@ -916,14 +970,14 @@ background-color: #9164E8;
 
 }
 
-.list-footer {
+.bottom-footer-loc{
   padding-top: 3rem;
   padding-bottom:4rem;
 
 }
 
 .list-footer li {
-  padding-bottom: 1.5rem;
+  padding-bottom: 1.25rem;
 }
 
 .list-footer li a,.text-box-footer span {
@@ -948,39 +1002,43 @@ background-color: #9164E8;
 }
 
 .bottom-footer {
+  width: 100%;
+  height:auto;
   background-color: #212121;
 }
 
-.text-box-footer {
+/* .text-box-footer {
   padding-top: 3rem;
-}
+} */
 
 
 .text-box-footer p {
+  height: 4rem;
   color: #FAFAFA;
-  font: 14px/19px yekanregular;
-  margin-bottom: 1.5rem;
-}
+  font: 14px/22px yekanregular;
+ }
 .text-box-footer a {
   color: #FAFAFA;
   font: 12px/16px yekanregular;
 }
 
-.approved-footer {
+/* .approved-footer {
   padding-top: 3.4375rem;
-}
+} */
 
 /*ISSUE:  FOR THIS PART THERE SHOULD BE OTHER SOLUTIONS TO CENTERISE THE IMAG IN THE RELATED BOX!!!!!!!!!!!!!!*/
-.bg-approved-footer {
-  width: 140px;
-  height: 140px;
+.bg-trust-footer {
+  width: 9rem;
+  height: 9rem;
   background-color: #FFFEFD;
   border-radius: 8px;
+  display: flex;
+  justify-content: end;
   margin-right: 1rem;
   position: relative;
 }
 
-.bg-approved-footer img {
+.bg-trust-footer img {
   position: absolute;
   top: 5%;
   right: 5%;
@@ -1004,7 +1062,7 @@ background-color: #9164E8;
     align-items: start;
   }
 
-  .search-icon.box-internship,.text-img-about-us,.img-box-about-us img,.img-box-internship,.intern,.box-document{
+  .search-icon,.box-internship,.text-img-about-us,.img-box-about-us img,.img-box-internship,.intern,.box-document{
     display: none;
   }
 
@@ -1026,10 +1084,32 @@ background-color: #9164E8;
     display: flex;
     flex-direction: column;
   }
-
-  
+.intro-text-box{
+    margin:0 auto;
+}
+.introduction .intro-text-box {
+  margin-bottom: 2rem;
 }
 
+.courses-title,.internship .text-box{
+  padding-right: 1.5rem;;
+}
+.internship .text-box,.document .text-box,.text-box-footer,.list-footer-box {
+  padding: 1.5rem 1.5rem;
+}
+.at-glance-category>.text-box {
+  margin:10%;
+}
+
+.bg-approved-footer {
+  scale:0.8;
+  margin-right:0;
+
+}
+.text-box-footer {
+  padding-top:0;
+
+}
 
 
 

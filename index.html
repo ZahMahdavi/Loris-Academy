@@ -16,11 +16,10 @@
   <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
   <!-- CSS -->
   <link rel="stylesheet" href="css/bootstrap.rtl.min.css">
-  <!-- <link rel="stylesheet" href="css/swiper.min.css"> -->
-  <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css">
+  <link rel="stylesheet" href="css/swiper-bundle.min.css">
   <link rel="stylesheet" href="css/main.css">
 
-
+ <!--ISSUE: -->
 </head>
 
 <body>
@@ -61,6 +60,11 @@
               </div>
             </div>
           </div>
+          <!--ISSUE: HOW TO SHOW HIDDEN PLACEHOLDER WHEN THE USER WANNA TYPE S.TH IN SEARCH BOX?????????????-->
+
+
+          <!--ISSUE: HOW TO SHOW SEARCH AREA WITH JQUERY????-->
+
           <div class="col-lg-4 col-6">
             <input class="form-control me-2 hidden" type="search" aria-label="Search">
             <form class="d-flex justify-content-end align-items-center">
@@ -74,7 +78,7 @@
       </div>
     </nav>
   </header>
-  <div class="main-slide" style="background-color: rgba(0,0,0,0.43)">
+  <div class="main-slide">
     <div class="container d-flex h-100 align-items-center justify-content-center">
       <div class="row">
         <div class="site-heading">
@@ -90,7 +94,7 @@
   <div class="about-us">
     <div class="container">
       <div class="row">
-        <div class="col-lg-6 col-12">
+        <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12">
           <div class="img-box-about-us">
             <div class="text-img-about-us">
               <h3>لورم ایپسوم متن ساختگی با نامفهوم از چاپ استفاده</h3>
@@ -100,7 +104,7 @@
             <img src="img/MaskGroup4.png">
           </div>
         </div>
-        <div class="col-lg-6 col-12">
+        <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12">
           <div class="text-box-about-us offset-2">
             <span class="d-block">درباره ما</span>
             <span class="d-block">ما را بیشتر بشناسید</span>
@@ -140,15 +144,15 @@
                 الخصوص
                 طراحان خلاقی</p>
             </div>
-            <!-- <div class="swiper-btns"> -->
-            <div class="swiper-button-next next1"></div>
-            <div class="swiper-button-prev prev1"></div>
-            <!-- </div> -->
+            <div class="swiper-btns-box">
+              <div class="swiper-button-next next1"></div>
+              <div class="swiper-button-prev prev1"></div>
+            </div>
           </article>
         </div>
         <!-- Slider main container -->
         <div class="col-lg-7 col-12">
-          <div class="swiper mySwiper">
+          <div class="swiper mySwiper-1">
             <!-- Additional required wrapper -->
             <div class="swiper-wrapper d-flex">
               <!-- Slides -->
@@ -235,79 +239,86 @@
   <div class="courses">
     <div class="container">
       <div class="row">
-        <h3>دوره ها</h3>
-        <div class="courses-title d-flex align-items-center justify-content-between">
-          <div class="col-6">
-            <span>دوره های بلند مدت</span>
-          </div>
-          <div class="col-6">
-            <nav class="navbar navbar-expand-lg py-4">
-              <div class="container d-block">
-                <div class="row justify-content-between">
-                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false"
-                    aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon navbar-toggler-icon-img"></span>
-                  </button>
-                  <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-                    <ul class="navbar-nav courses-menu">
-                      <li class="nav-item courses-menu-link">
-                        <a class="nav-link text-white" aria-current="page" href="#">همه دسته ها</a>
-                      </li>
-                      <li class="nav-item courses-menu-link">
-                        <a class="nav-link" href="#">بازاریابی و برندینگ</a>
-                      </li>
-                      <li class="nav-item courses-menu-link">
-                        <a class="nav-link" href="#">برنامه نویسی</a>
-                      </li>
-                      <li class="nav-item courses-menu-link">
-                        <a class="nav-link" href="#">UI/UX</a>
-                      </li>
-                      <li class="nav-item courses-menu-link">
-                        <a class="nav-link" href="#">گرافیک</a>
-                      </li>
-                      <li class="nav-item courses-menu-link">
-                        <a class="nav-link" href="#">وردپرس</a>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            </nav>
-          </div>
+        <div class="col-6 courses-title d-flex flex-column">
+          <h3>دوره ها</h3>
+          <span>دوره های بلند مدت</span>
         </div>
-        <div class="courses-boxes px-0">
-          <div class="container">
-            <div class="row d-flex flex-wrap">
-              <div class="col-lg-4 col-12">
-                <div class="course-box">
-                  <figure>
-                    <img src="img/MaskGroup5.png" alt="course">
+        <div class="col-6">
+          <nav class="navbar navbar-expand-lg py-4">
+            <div class="container d-block">
+              <div class="row justify-content-between">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false"
+                  aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon navbar-toggler-icon-img"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                  <ul class="navbar-nav courses-menu">
+                    <li class="nav-item courses-menu-link">
+                      <a class="nav-link" aria-current="page" href="#">همه دسته ها</a>
+                    </li>
+                    <li class="nav-item courses-menu-link">
+                      <a class="nav-link" href="#">بازاریابی و برندینگ</a>
+                    </li>
+                    <li class="nav-item courses-menu-link">
+                      <a class="nav-link" href="#">برنامه نویسی</a>
+                    </li>
+                    <li class="nav-item courses-menu-link">
+                      <a class="nav-link" href="#">UI/UX</a>
+                    </li>
+                    <li class="nav-item courses-menu-link">
+                      <a class="nav-link" href="#">گرافیک</a>
+                    </li>
+                    <li class="nav-item courses-menu-link">
+                      <a class="nav-link" href="#">وردپرس</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </nav>
+        </div>
+      </div>
+      <div class="courses-boxes px-0">
+        <div class="container">
+          <div class="row d-flex flex-wrap">
+            <div class="col-lg-4 col-12">
+              <div class="course-box">
+                <a href="#" class="course-box-link">
+                  <figure> 
+                    <img src="img/MaskGroup5.png" alt="course"><!--ISSUE: CANT SET HEIGHT OF DIVE CLASS "hov-text-course"AND TTHE POSITION OF HE HOVER IS NOT CORRECT?????-->
+                    <span class="hov-text-course">انتخاب دوره</span>
                   </figure>
-                  <div class="course-items">
-                    <h3 class="ps-3">نام دوره اینجا نوشته شود</h3>
-                    <div class="d-flex justify-content-between align-items-center">
-                      <div class="course-prof d-flex align-items-center py-2 ps-3">
-                        <img src="img/MaskGroup14.png" alt="prof">
-                        <span class="ps-2 my-0">نام مدرس اینجانوشته شود</span>
-                      </div>
-                      <div class="course-type">
-                        <span class="icon-Group-576"></span>
-                        <span>دوره حضوری</span>
-                      </div>
+                </a> 
+                <div class="course-items">
+                  <h3 class="ps-3">نام دوره اینجا نوشته شود</h3>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="course-prof d-flex align-items-center py-2 ps-3">
+                      <img src="img/MaskGroup14.png" alt="prof">
+                      <span class="ps-2 my-0">نام مدرس اینجانوشته شود</span>
                     </div>
-                    <div class="date align-items-start py-2 ps-3">
-                      <span class="icon-Group-324"></span>
-                      <span>1400.2.28 :تاریخ شروع</span>
+                    <div class="course-type">
+                      <span class="icon-Group-576"></span>
+                      <span>دوره حضوری</span>
                     </div>
+                  </div>
+                  <div class="date align-items-start py-2 ps-3">
+                    <span class="icon-Group-324"></span>
+                    <span>تاریخ شروع</span>
+                    <span>:</span>
+                    <span>1400.2.28</span>
                   </div>
                 </div>
               </div>
-              <div class="col-lg-4 col-12">
-                <div class="course-box">
+            </div>
+            <div class="col-lg-4 col-12">
+              <div class="course-box">
+                <a href="#" class="course-box-link">
                   <figure>
                     <img src="img/MaskGroup5.png" alt="course">
+                    <span class="hov-text-course">انتخاب دوره</span>
                   </figure>
+                </a>
                   <div class="course-items">
                     <h3 class="ps-3">نام دوره اینجا نوشته شود</h3>
                     <div class="d-flex justify-content-between align-items-center">
@@ -322,16 +333,21 @@
                     </div>
                     <div class="date align-items-start py-2 ps-3">
                       <span class="icon-Group-324"></span>
-                      <span>1400.2.28 :تاریخ شروع</span>
+                      <span>تاریخ شروع</span>
+                      <span>:</span>
+                      <span>1400.2.28</span>
                     </div>
                   </div>
-                </div>
               </div>
-              <div class="col-lg-4 col-12">
-                <div class="course-box">
+            </div>
+            <div class="col-lg-4 col-12">
+              <div class="course-box">
+                <a href="#" class="course-box-link">
                   <figure>
                     <img src="img/MaskGroup5.png" alt="course">
+                    <span class="hov-text-course">انتخاب دوره</span>
                   </figure>
+                </a>
                   <div class="course-items">
                     <h3 class="ps-3">نام دوره اینجا نوشته شود</h3>
                     <div class="d-flex justify-content-between align-items-center">
@@ -346,16 +362,21 @@
                     </div>
                     <div class="date align-items-start py-2 ps-3">
                       <span class="icon-Group-324"></span>
-                      <span>1400.2.28 :تاریخ شروع</span>
+                      <span>تاریخ شروع</span>
+                      <span>:</span>
+                      <span>1400.2.28</span>
                     </div>
                   </div>
-                </div>
               </div>
-              <div class="col-lg-4 col-12">
-                <div class="course-box">
+            </div>
+            <div class="col-lg-4 col-12">
+              <div class="course-box">
+                <a href="#" class="course-box-link">
                   <figure>
                     <img src="img/MaskGroup5.png" alt="course">
+                    <span class="hov-text-course">انتخاب دوره</span>
                   </figure>
+                </a>
                   <div class="course-items">
                     <h3 class="ps-3">نام دوره اینجا نوشته شود</h3>
                     <div class="d-flex justify-content-between align-items-center">
@@ -370,16 +391,21 @@
                     </div>
                     <div class="date align-items-start py-2 ps-3">
                       <span class="icon-Group-324"></span>
-                      <span>1400.2.28 :تاریخ شروع</span>
+                      <span>تاریخ شروع</span>
+                      <span>:</span>
+                      <span>1400.2.28</span>
                     </div>
                   </div>
-                </div>
               </div>
-              <div class="col-lg-4 col-12">
-                <div class="course-box">
+            </div>
+            <div class="col-lg-4 col-12">
+              <div class="course-box">
+                <a href="#" class="course-box-link">
                   <figure>
                     <img src="img/MaskGroup5.png" alt="course">
+                    <span class="hov-text-course">انتخاب دوره</span>
                   </figure>
+                </a>
                   <div class="course-items">
                     <h3 class="ps-3">نام دوره اینجا نوشته شود</h3>
                     <div class="d-flex justify-content-between align-items-center">
@@ -394,16 +420,21 @@
                     </div>
                     <div class="date align-items-start py-2 ps-3">
                       <span class="icon-Group-324"></span>
-                      <span>1400.2.28 :تاریخ شروع</span>
+                      <span>تاریخ شروع</span>
+                      <span>:</span>
+                      <span>1400.2.28</span>
                     </div>
                   </div>
-                </div>
               </div>
-              <div class="col-lg-4 col-12">
-                <div class="course-box">
+            </div>
+            <div class="col-lg-4 col-12">
+              <div class="course-box">
+                <a href="#" class="course-box-link">
                   <figure>
                     <img src="img/MaskGroup5.png" alt="course">
+                    <span class="hov-text-course">انتخاب دوره</span>
                   </figure>
+                </a>
                   <div class="course-items">
                     <h3 class="ps-3">نام دوره اینجا نوشته شود</h3>
                     <div class="d-flex justify-content-between align-items-center">
@@ -418,10 +449,11 @@
                     </div>
                     <div class="date align-items-start py-2 ps-3">
                       <span class="icon-Group-324"></span>
-                      <span>1400.2.28 :تاریخ شروع</span>
+                      <span>تاریخ شروع</span>
+                      <span>:</span>
+                      <span>1400.2.28</span>
                     </div>
                   </div>
-                </div>
               </div>
             </div>
           </div>
@@ -434,6 +466,7 @@
     <div class="container">
       <div class="row">
         <div class="col-12 col-lg-6">
+          <!--ISUUE: BOXES DIMENTIONS PROBLEM???FOR BEING RESPONSIVE....-->
           <div class="box-internship align-items-center">
             <div class="img-box-internship">
               <figure class="interns-img-box d-flex flex-wrap justify-content-between">
@@ -460,7 +493,8 @@
                 <span>کارآموز</span><span>UI/UX design</span>
               </div>
             </div>
-            <div class="logo-op-1"></div>
+            <figure><img class="logo-op-1" src="img/Loris-Logo-03@2x.png"
+                alt="loris logo"></figure>
           </div>
         </div>
         <div class="col-12 col-lg-6">
@@ -483,119 +517,133 @@
   <div class="courses">
     <div class="container">
       <div class="row">
-        <h3>دوره ها</h3>
-        <div class="courses-title d-flex align-items-center justify-content-between">
-          <div class="col-6">
-            <span>دوره های بلند مدت</span>
-          </div>
-          <div class="col-6">
-            <nav class="navbar navbar-expand-lg py-4">
-              <div class="container d-block">
-                <div class="row justify-content-between">
-                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false"
-                    aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon navbar-toggler-icon-img"></span>
-                  </button>
-                  <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
-                    <ul class="navbar-nav courses-menu">
-                      <li class="nav-item courses-menu-link">
-                        <a class="nav-link text-white" aria-current="page" href="#">همه دسته ها</a>
-                      </li>
-                      <li class="nav-item courses-menu-link">
-                        <a class="nav-link" href="#">بازاریابی و برندینگ</a>
-                      </li>
-                      <li class="nav-item courses-menu-link">
-                        <a class="nav-link" href="#">برنامه نویسی</a>
-                      </li>
-                      <li class="nav-item courses-menu-link">
-                        <a class="nav-link" href="#">UI/UX</a>
-                      </li>
-                      <li class="nav-item courses-menu-link">
-                        <a class="nav-link" href="#">گرافیک</a>
-                      </li>
-                      <li class="nav-item courses-menu-link">
-                        <a class="nav-link" href="#">وردپرس</a>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            </nav>
-          </div>
+        <div class="col-6 courses-title d-flex flex-column">
+          <h3>دوره ها</h3>
+          <span>دوره های بلند مدت</span>
         </div>
-        <div class="courses-boxes px-0 d-flex flex-wrap">
-          <div class="container">
-            <div class="row">
-              <div class="col-lg-4 col-12">
-                <div class="course-box">
+        <div class="col-6">
+          <nav class="navbar navbar-expand-lg py-4">
+            <div class="container d-block">
+              <div class="row justify-content-between">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false"
+                  aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon navbar-toggler-icon-img"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+                  <ul class="navbar-nav courses-menu">
+                    <li class="nav-item courses-menu-link">
+                      <a class="nav-link" aria-current="page" href="#">همه دسته ها</a>
+                    </li>
+                    <li class="nav-item courses-menu-link">
+                      <a class="nav-link" href="#">بازاریابی و برندینگ</a>
+                    </li>
+                    <li class="nav-item courses-menu-link">
+                      <a class="nav-link" href="#">برنامه نویسی</a>
+                    </li>
+                    <li class="nav-item courses-menu-link">
+                      <a class="nav-link" href="#">UI/UX</a>
+                    </li>
+                    <li class="nav-item courses-menu-link">
+                      <a class="nav-link" href="#">گرافیک</a>
+                    </li>
+                    <li class="nav-item courses-menu-link">
+                      <a class="nav-link" href="#">وردپرس</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </nav>
+        </div>
+      </div>
+      <div class="courses-boxes px-0 d-flex flex-wrap">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-4 col-12">
+              <div class="course-box">
+                <a href="#" class="course-box-link">
                   <figure>
                     <img src="img/MaskGroup5.png" alt="course">
+                    <span class="hov-text-course">انتخاب دوره</span>
                   </figure>
-                  <div class="course-items">
-                    <h3 class="ps-3">نام دوره اینجا نوشته شود</h3>
-                    <div class="d-flex justify-content-between align-items-center">
-                      <div class="course-prof d-flex align-items-center py-2 ps-3">
-                        <img src="img/MaskGroup14.png" alt="prof">
-                        <span class="ps-2 my-0">نام مدرس اینجانوشته شود</span>
-                      </div>
-                      <div class="course-type">
-                        <span class="icon-Group-576"></span>
-                        <span>دوره حضوری</span>
-                      </div>
+                </a>
+                <div class="course-items">
+                  <h3 class="ps-3">نام دوره اینجا نوشته شود</h3>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="course-prof d-flex align-items-center py-2 ps-3">
+                      <img src="img/MaskGroup14.png" alt="prof">
+                      <span class="ps-2 my-0">نام مدرس اینجانوشته شود</span>
                     </div>
-                    <div class="date align-items-start py-2 ps-3">
-                      <span class="icon-Group-324"></span>
-                      <span>1400.2.28 :تاریخ شروع</span>
+                    <div class="course-type">
+                      <span class="icon-Group-576"></span>
+                      <span>دوره حضوری</span>
                     </div>
+                  </div>
+                  <div class="date align-items-start py-2 ps-3">
+                    <span class="icon-Group-324"></span>
+                    <span>تاریخ شروع</span>
+                    <span>:</span>
+                    <span>1400.2.28</span>
                   </div>
                 </div>
               </div>
-              <div class="col-lg-4 col-12">
-                <div class="course-box">
+            </div>
+            <div class="col-lg-4 col-12">
+              <div class="course-box">
+                <a href="#" class="course-box-link">
                   <figure>
                     <img src="img/MaskGroup5.png" alt="course">
+                    <span class="hov-text-course">انتخاب دوره</span>
                   </figure>
-                  <div class="course-items">
-                    <h3 class="ps-3">نام دوره اینجا نوشته شود</h3>
-                    <div class="d-flex justify-content-between align-items-center">
-                      <div class="course-prof d-flex align-items-center py-2 ps-3">
-                        <img src="img/MaskGroup14.png" alt="prof">
-                        <span class="ps-2 my-0">نام مدرس اینجانوشته شود</span>
-                      </div>
-                      <div class="course-type">
-                        <span class="icon-Group-589"></span>
-                        <span>دوره آنلاین</span>
-                      </div>
+                </a>
+                <div class="course-items">
+                  <h3 class="ps-3">نام دوره اینجا نوشته شود</h3>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="course-prof d-flex align-items-center py-2 ps-3">
+                      <img src="img/MaskGroup14.png" alt="prof">
+                      <span class="ps-2 my-0">نام مدرس اینجانوشته شود</span>
                     </div>
-                    <div class="date align-items-start py-2 ps-3">
-                      <span class="icon-Group-324"></span>
-                      <span>1400.2.28 :تاریخ شروع</span>
+                    <div class="course-type">
+                      <span class="icon-Group-589"></span>
+                      <span>دوره آنلاین</span>
                     </div>
+                  </div>
+                  <div class="date align-items-start py-2 ps-3">
+                    <span class="icon-Group-324"></span>
+                    <span>تاریخ شروع</span>
+                    <span>:</span>
+                    <span>1400.2.28</span>
                   </div>
                 </div>
               </div>
-              <div class="col-lg-4 col-12">
-                <div class="course-box">
+            </div>
+            <div class="col-lg-4 col-12">
+              <div class="course-box">
+                <a href="#" class="course-box-link">
                   <figure>
                     <img src="img/MaskGroup5.png" alt="course">
+                    <span class="hov-text-course">انتخاب دوره</span>
                   </figure>
-                  <div class="course-items">
-                    <h3 class="ps-3">نام دوره اینجا نوشته شود</h3>
-                    <div class="d-flex justify-content-between align-items-center">
-                      <div class="course-prof d-flex align-items-center py-2 ps-3">
-                        <img src="img/MaskGroup14.png" alt="prof">
-                        <span class="ps-2 my-0">نام مدرس اینجانوشته شود</span>
-                      </div>
-                      <div class="course-type">
-                        <span class="icon-Group-589"></span>
-                        <span>دوره آنلاین</span>
-                      </div>
+                </a>
+
+                <div class="course-items">
+                  <h3 class="ps-3">نام دوره اینجا نوشته شود</h3>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="course-prof d-flex align-items-center py-2 ps-3">
+                      <img src="img/MaskGroup14.png" alt="prof">
+                      <span class="ps-2 my-0">نام مدرس اینجانوشته شود</span>
                     </div>
-                    <div class="date align-items-start py-2 ps-3">
-                      <span class="icon-Group-324"></span>
-                      <span>1400.2.28 :تاریخ شروع</span>
+                    <div class="course-type">
+                      <span class="icon-Group-589"></span>
+                      <span>دوره آنلاین</span>
                     </div>
+                  </div>
+                  <div class="date align-items-start py-2 ps-3">
+                    <span class="icon-Group-324"></span>
+                    <span>تاریخ شروع</span>
+                    <span>:</span>
+                    <span>1400.2.28</span>
                   </div>
                 </div>
               </div>
@@ -609,34 +657,34 @@
   <section class="at-glance-category">
     <div class="text-box px-0 d-flex flex-column align-items-center">
       <span>لوریس</span>
-      <span>لوریس آکادمی در یک نگاه</span>
+      <span class="mx-auto">لوریس آکادمی در یک نگاه</span>
     </div>
     <div class="container">
       <div class="row d-flex justify-content-center">
-        <div class="col-4">
+        <div class="col-lg-4 col-md-6 col-sm-12">
           <div class="at-glance">
-        <div class="at-glance-box">
-          <div class="mx-auto"><span class="icon-monitor"></span></div>
-          <p>42دوره</p>
+            <div class="at-glance-box">
+              <div class="mx-auto"><span class="icon-monitor"></span></div>
+              <p>42دوره</p>
+            </div>
+          </div>
         </div>
-      </div>
+        <div class="col-lg-4 col-md-6 col-sm-12">
+          <div class="at-glance">
+            <div class="at-glance-box">
+              <div class="mx-auto"><span class="icon-graduation-cap"></span></div>
+              <p>100دانش آموز</p>
+            </div>
+          </div>
         </div>
-      <div class="col-4">
-        <div class="at-glance">
-        <div class="at-glance-box">
-          <div class="mx-auto"><span class="icon-graduation-cap"></span></div>
-          <p>100دانش آموز</p>
+        <div class="col-lg-4 col-md-6 col-sm-12">
+          <div class="at-glance">
+            <div class="at-glance-box">
+              <div class="mx-auto"><span class="icon-profile-2"></span></div>
+              <p>50 کارآموز</p>
+            </div>
+          </div>
         </div>
-        </div>
-      </div>
-      <div class="col-4">
-        <div class="at-glance">
-        <div class="at-glance-box">
-          <div class="mx-auto"><span class="icon-profile-2"></span></div>
-          <p>50 کارآموز</p>
-        </div>
-      </div>
-      </div>
       </div>
     </div>
   </section>
@@ -670,22 +718,24 @@
             <div class="logo-op-2"></div>
           </div>
         </div>
-        <div class="text-box ps-2 mb-2 col-12 col-lg-6">
-          <span class="d-block">مدارک</span>
-          <span class="d-block">آیا شما هم در مورد مدارک نیاز به مشاوره دارید؟</span>
-          <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است
-            چاپگرها و
-            متون
-            بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و
-            کاربردهای
-            متنوع
-            با
-            هدف بهبود ابزارهای کاربردی می باشد کتابهای زیادی در شصت و سه درصد گذشته حال و آینده شناخت فراوان
-            جامعه
-            و
-            متخصصان را می طلبد تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان
-            خلاقی</p>
-          <a href="#" class="read-more btn">مشاوره</a>
+        <div class="col-12 col-lg-6">
+          <div class="text-box ps-2 mb-2">
+            <span class="d-block">مدارک</span>
+            <span class="d-block">آیا شما هم در مورد مدارک نیاز به مشاوره دارید؟</span>
+            <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است
+              چاپگرها و
+              متون
+              بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و
+              کاربردهای
+              متنوع
+              با
+              هدف بهبود ابزارهای کاربردی می باشد کتابهای زیادی در شصت و سه درصد گذشته حال و آینده شناخت فراوان
+              جامعه
+              و
+              متخصصان را می طلبد تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان
+              خلاقی</p>
+            <a href="#" class="read-more btn">مشاوره</a>
+          </div>
         </div>
       </div>
     </div>
@@ -693,17 +743,22 @@
   <!-- blog section-->
   <div class="blog">
     <div class="container">
-      <div class="blog-box">
-        <div class="blog-recent d-flex flex-column">
-          <span>وبلاگ</span>
-          <span>آخرین مطالب وبلاگ</span>
-          <!-- ISSUE:  SLIDER TAB SHOULD PLACE HERE!!!!!!!!!!! -->
+      <div class="row">
+        <div class="col-6">
+          <div class="blog-recent d-flex flex-column">
+            <span>وبلاگ</span>
+            <span>آخرین مطالب وبلاگ</span>
+          </div>
         </div>
-          <div class="swiper-button-prev prev2"></div>
-          <div class="swiper-button-next next2"></div>
+        <div class="col-6 position-relative">
+          <div class="swiper-btns-box">
+            <div class="swiper-button-prev prev1"></div>
+            <div class="swiper-button-next next1"></div>
+          </div>
+        </div>
       </div>
     </div>
-    
+
     <!-- Slider main container -->
     <div class="container">
       <div class="row px-4">
@@ -845,10 +900,11 @@
       </div>
     </div>
     <div class="bottom-footer">
+    <div class="bottom-footer-loc">
       <div class="container">
         <div class="row">
           <div class="col-lg-4 col-12">
-            <!--ISSUE: THIS LIST CANT BE ARRAGE IN ONE <ul> WITH flex-wrap COMBINATION? INSTEAD OF TWO SEPRATED COLUMNS????????-->
+            <!--ISSUE: THIS LIST CANT BE ARRANGED IN ONE <ul> WITH flex-wrap COMBINATION? INSTEAD OF TWO SEPRATED COLUMNS????????-->
             <div class="list-footer-box d-flex">
               <ul class="list-footer col-6">
                 <li><a href="#">صفحه ی اصلی</a></li>
@@ -867,7 +923,7 @@
           <div class="col-lg-4 col-12">
             <div class="text-box-footer">
               <span class="d-block mb-4">لورم ایپسوم ساختگی با تولید سادگی</span>
-              <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است
+              <p class="overflow-hidden">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است
                 متون
                 بلکه
                 روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و
@@ -881,12 +937,13 @@
             </div>
           </div>
           <div class="col-lg-4 col-12">
-            <div class="approved-footer justify-content-end d-flex">
-              <div class="bg-approved-footer"><img src="img/MaskGroup3.png"></div>
-              <div class="bg-approved-footer"><img src="img/MaskGroup2.png"></div>
+            <div class="trust-footer d-flex flex-lg-row flex-md-row flex-sm-column justify-content-lg-end justify-content-center">
+              <div class="bg-trust-footer"><img src="img/MaskGroup3.png"></div>
+              <div class="bg-trust-footer"><img src="img/MaskGroup2.png"></div>
             </div>
           </div>
         </div>
+      </div>
       </div>
       <div class="text-copyright">
         <p class="mb-0">کلیه حقوق مادی و معنوی این سایت محفوظ و متعلق به شرکت لورم اپیسوم است</p>
@@ -895,47 +952,55 @@
   </footer>
   <script src="js/bootstrap.min.js"></script>
   <script src="js/swiper-bundle.min.js"></script>
-  <!-- <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script> -->
-
-
-
-
-  <!--ISSUE: HOW TO SET SLIDE PRER VIEW NO. FOR SCREEN SM & MD-->
 
   <script>
-    var swiper = new Swiper(".mySwiper", {
-      slidesPerView: 2,
-      spaceBetween: 24,
-      pagination: {
-        el: ".swiper-pagination",
-        clickable: true,
-      },
-    });
-  </script>
-  <script>
-    var swiper = new Swiper(".mySwiper-2", {
-      slidesPerView: 3,
-      spaceBetween: 24,
-      pagination: {
-        el: ".swiper-pagination",
-        clickable: true,
-      },
-    });
-  </script>
-  <script>
-    const swiper = new Swiper('.swiper', {
-      // Optional parameters
-      loop: true,
+    var swiper = new Swiper(".mySwiper-1", {
 
-      // Navigation arrows
       navigation: {
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev',
         clickable: true,
       },
-
+      breakpoints: {
+        640: {
+          slidesPerView: 1,
+          spaceBetween: 24,
+        },
+        768: {
+          slidesPerView: 2,
+          spaceBetween: 24,
+        },
+        1024: {
+          slidesPerView: 2,
+          spaceBetween: 24,
+        },
+      },
     });
   </script>
+  <script>
+    var swiper = new Swiper(".mySwiper-2", {
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+        clickable: true,
+      },
+      breakpoints: {
+        640: {
+          slidesPerView: 2,
+          spaceBetween: 24,
+        },
+        768: {
+          slidesPerView: 3,
+          spaceBetween: 24,
+        },
+        1024: {
+          slidesPerView: 3,
+          spaceBetween: 24,
+        },
+      },
+    });
+  </script>
+
 </body>
 
 </html>
