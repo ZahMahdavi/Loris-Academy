@@ -260,7 +260,7 @@ ul {
   background-position: center;
   width: 100%;
   height: 100vh;
- 
+
 }
 
 .main-slide:before {
@@ -275,15 +275,17 @@ ul {
   z-index: 100;
 }
 
-.site-heading{
+.site-heading {
   position: relative;
   z-index: 10000;
 }
+
 .navbar-toggler-icon-img {
   background-image: url('../img/toggler.svg');
 }
-.hidden{
-display: none;
+
+.hidden {
+  display: none;
 }
 
 .nav-link,
@@ -332,6 +334,7 @@ display: none;
   line-height: 3rem;
   border-radius: 4px;
 }
+
 .site-heading a {
   width: 10.625rem;
   height: 3rem;
@@ -344,9 +347,11 @@ display: none;
 }
 
 .img-box-about-us {
-  position: absolute;
   width: 42%;
   height: 100%;
+  position: absolute;
+  top: 0;
+  right: auto;
 }
 
 
@@ -365,6 +370,8 @@ display: none;
   font: 24px/38px yekanbold;
   color: #FAFAFA;
   padding: 36px 25px 36px 26px;
+  /*ISSUE: FIND A BETTER SOLUTION!!!!!!!!*/
+
 }
 
 .img-box-about-us img:nth-child(2) {
@@ -377,7 +384,7 @@ display: none;
 .img-box-about-us img:nth-child(3) {
   position: absolute;
   bottom: 0PX;
-  right: 13px;
+  right: 12px;
   z-index: 1000;
 }
 
@@ -389,17 +396,17 @@ display: none;
 }
 
 
-.text-box-about-us {
+.text-box {
   width: 80%;
   height: 100%;
-  /*ISSUE: FIND BETER SOLUTION!!!!!!!!*/
   padding: 2.4rem 0;
 }
 
 
 
-.text-box-about-us span:nth-child(1),
-.text-box span:nth-child(1),.intro-text-box span:nth-child(1),.courses h3,
+
+.text-box span:nth-child(1),
+.courses h3,
 .course-type span:nth-child(2),
 .course-type span:nth-child(2),
 .blog-recent span:nth-child(1) {
@@ -410,16 +417,15 @@ display: none;
 
 }
 
-.text-box-about-us span:nth-child(2),
-.text-box span:nth-child(2),.intro-text-box span:nth-child(2),.courses-title span,
+.text-box span:nth-child(2),
+.courses-title span,
 .blog-recent span:nth-child(2) {
   font: 24px/38px yekanbold;
   color: #212121;
   padding-bottom: 1rem;
 }
 
-.text-box-about-us p,
-.text-box p,.intro-text-box p,
+.text-box p,
 .blog-text-box p {
   font: 14px/19px yekanregular;
   color: #616161;
@@ -427,10 +433,6 @@ display: none;
   text-align: justify;
 
 }
-
-/* .blog-slide p:nth-child(3) {
-  text-align: justify;
-} */
 
 .read-more {
   width: 150px;
@@ -443,9 +445,10 @@ display: none;
   padding: 0;
 
 }
-.categories{
-margin-bottom: 8.75rem;
-margin-top: 1.5rem;
+
+.categories {
+  margin-bottom: 8.75rem;
+  margin-top: 1.5rem;
 }
 
 .introduction {
@@ -455,24 +458,19 @@ margin-top: 1.5rem;
   position: relative;
 }
 
-
-.intro-text-box {
-  width: 77%;
+.swiper-btns-box {
+  width: 8rem;
   height: auto;
-  padding-bottom: 0;
-  overflow: hidden;
+  display: flex;
+  justify-content: space-between;
 }
-.swiper-btns-box{
-width: 8rem;
-height: auto;
-display:flex;
-justify-content: space-between;
+
+.introduction>.swiper-btns-box {
+  position: absolute;
+  right: 0;
+  bottom: 0 !important;
 }
-.introduction>.swiper-btns-box{
-position: absolute;
-right: 0;
-bottom: 0!important;
-}
+
 .next1,
 .prev1 {
   width: 3rem;
@@ -486,23 +484,11 @@ bottom: 0!important;
   --swiper-navigation-size: 24px;
   line-height: 3rem;
 }
+
 .next1:hover,
 .prev1:hover {
-background-color: #9164E8;
+  background-color: #9164E8;
 }
-
-/* .next1 {
-position: absolute;
-right: 0;
-top: 100%!important;
-}
-.prev1 {
-  position: absolute;
-  right: 4rem;
-  top: 100%!important;
-  } */
-  
-
 
 
 .branches {
@@ -512,10 +498,10 @@ top: 100%!important;
   background-color: #FFFFFF;
   box-shadow: 0px 4px 12px #1815150A;
   border: 1px solid #F6F6F6;
-  margin-top:1rem;
+  margin-top: 1rem;
   margin-bottom: 2rem;
   position: relative;
- 
+
 }
 
 .branches:after {
@@ -532,12 +518,12 @@ top: 100%!important;
   color: #9164E8;
 }
 
-.branches:hover:after{
+.branches:hover:after {
   height: 6px;
   border-radius: 0px 0px 6px 6px;
 }
 
-.branch-box{
+.branch-box {
   padding: 1.5rem 1.5rem 2rem;
 }
 
@@ -574,11 +560,6 @@ top: 100%!important;
   color: #212121;
 }
 
-
-
-
-
-
 /*courses section*/
 .courses-menu-link :hover {
   width: 94px;
@@ -598,43 +579,55 @@ top: 100%!important;
   box-shadow: 0px 4px 12px #1815150A;
   border: 1px solid #F6F6F6;
   margin: 0.875rem 0 0.875rem 0;
-  }
-  .course-box-link{
-    position: relative;
-    display:table;
-  }
-.course-box-link{
-  display:table-cell; 
-  vertical-align:middle
 }
-.hov-text-course {
-  background: rgb(0, 0, 0);
-	color: #fff;
-	opacity: 0;
-	position: absolute;
-	top: 0;
-	right: 0;
-	width: 100%;
-	height: 100%;
-  
+.course-box-img{
+  width: 100%;
+
+}
+.course-box-img img{
+  width: 100%;
+
+}
+.course-box-link {
+  position: relative;
+  display: table;
 }
 
-.hov-text-course:hover{
-  background: rgb(0, 0, 0,0.8);
-	color: #fff;
-	opacity: 1;
-	position: absolute;
-	top: 50%;
-	right: 0;
-	width: 100%;
-	height: 50%;
+.course-box-link {
+  display: table-cell;
+  vertical-align: middle
+}
+
+.hov-text-course {
+  background: rgb(0, 0, 0);
+  color: #fff;
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+
+}
+
+.hov-text-course:hover {
+  background: rgb(0, 0, 0, 0.8);
+  color: #fff;
+  opacity: 1;
+  position: absolute;
+  top: 50%;
+  right: 0;
+  width: 100%;
+  height: 50%;
   font: 24px/38px yekanbold;
   color: #9164E8;
   text-align: center;
 }
 
 .course-prof span:nth-child(2),
-.date span:nth-child(2),.date span:nth-child(3),.date span:nth-child(4) {
+.date span:nth-child(2),
+.date span:nth-child(3),
+.date span:nth-child(4) {
   font: 14px/19px yekanregular;
   color: #424242;
 }
@@ -646,21 +639,22 @@ top: 100%!important;
 /*internship section*/
 .internship {
   margin-top: 8.75rem;
-  margin-bottom: 8.625rem;
+  margin-bottom: 8.75rem;
 
 }
 
 .box-internship {
   width: 100%;
-  height: auto;
+  height: 20rem;
+  /*ISSUE: FIND A BETTER SOLUTION!!!!!!!!*/
   position: relative;
 
 }
 
 
 .img-box-internship {
-  width: 100%;
-  height: auto;
+  width: 364px;
+  height:206px;
   background-color: #FFFFFF;
   border-radius: 6px;
   box-shadow: 0px 4px 12px #1815150A;
@@ -672,17 +666,23 @@ top: 100%!important;
 }
 
 .interns-img-box {
-  width: 16rem;
+  width: 15rem;
   height: 7rem;
-  /* padding:49px 24px 45px; */
   position: absolute;
   top: 49px;
   right: 16px;
 
 }
 
+.img-box-test {
+  width: 100%;
+  height: auto;
+}
+
 .interns-img-box img {
-  margin: 0.5rem;
+  /* margin: 0.5rem; */
+  width: 3rem;
+  height: 3rem;
 }
 
 .text-box-internship {
@@ -692,8 +692,7 @@ top: 100%!important;
   border-radius: 6px;
   position: absolute;
   z-index: 100;
-  top: -2.5rem;
-  right: -13px
+
 }
 
 .text-box-internship span,
@@ -701,7 +700,6 @@ top: 100%!important;
   font: 20px/27px yekanbold;
   color: #FAFAFA;
   text-align: center;
-  padding: 1.125rem 1rem;
 }
 
 .intern {
@@ -710,7 +708,7 @@ top: 100%!important;
   background-color: #FFFFFF;
   box-shadow: 0px 4px 12px #1815150A;
   border-radius: 4px;
-  display:flex;
+  display: flex;
   flex-direction: column;
   align-items: center;
   position: absolute;
@@ -738,25 +736,29 @@ top: 100%!important;
   padding-top: 0.5625rem;
   padding-bottom: 1.5rem;
 }
+
 .internship .text-box {
   margin-bottom: 2.5rem;
   margin-top: 2rem;
 }
+
 .logo-op-1 {
   opacity: 0.02;
   position: absolute;
-  bottom:0;
-  right: 0;
+  bottom: 0;
+  left: 0;
 }
 
 /*at-glance section */
 .at-glance-category {
   margin: 7.5rem 23%;
 }
-.at-glance{
+
+.at-glance {
   width: 100%;
   height: auto;
 }
+
 .at-glance-box {
   width: 100%;
   height: auto;
@@ -795,42 +797,62 @@ top: 100%!important;
 }
 
 /*ISSUE:BOXES SIZE BY PERCENTAGE CAUSES CHANGING THE POSITION OF OTHER BOXES??????? */
-
+.box-document-all {
+  position: relative;
+}
 .box-document {
-  width: 348px;
-  height: 364px;
+  width: 65%;
+  height: 22.75rem;
   box-shadow: 0px 4px 12px #1815150A;
   border-radius: 4px;
+  margin-right: 1rem;
   position: relative;
   z-index: 10;
 }
 
 .text-box-document {
-  width: 159px;
-  height: 105px;
+  width: 10rem;
+  height: 8.5rem;
   background-color: #9164E8;
   border-radius: 6px;
   position: absolute;
   z-index: 100;
   top: -2.5rem;
-  right: -13px;
+  right: 2px;
 }
 
 .text-box-document span {
+  width: 80%;
+  height:80%;
   line-height: 38px;
-  padding: 1.125rem 1rem 1.125rem 2rem;
+  padding:1.5rem 1rem;
   margin: 0;
 }
 
 .sample-box-document {
   width: 396px;
-  height: 72px;
+  height: auto;
   position: absolute;
   z-index: 100;
   top: 6rem;
   right: 4.5rem;
 }
-
+.sample-box {
+  position: relative;
+  box-shadow: 0px 4px 12px #1815150A;
+  border-radius: 4px;
+}
+.sample-box::before{
+content: "";
+width: 0.75rem;
+height: 0.75rem;
+background-color: #9164E8;
+border-radius: 100%;
+position: absolute;
+top:50%;
+right:-4rem;
+opacity: 1;
+}
 .sample-box-document img {
   width: 2.5rem;
   height: 2.5rem;
@@ -841,11 +863,6 @@ top: 100%!important;
   font: 14px/19px yekanregular;
   color: #616161;
   margin: 0;
-}
-
-.sample-box-document div {
-  box-shadow: 0px 4px 12px #1815150A;
-  border-radius: 4px;
 }
 
 .form-inline {
@@ -861,6 +878,7 @@ top: 100%!important;
 .form-inline input {
   background-color: #F6F6F6;
 }
+
 :placeholder-shown {
   border: 2px solid silver;
 }
@@ -884,15 +902,16 @@ top: 100%!important;
 }
 
 .logo-op-2 {
-  width: 325px;
-  height: 140px;
+  width: 20rem;
+  height: 8.75rem;
   background-image: url('../img/Loris-Logo-03@2x.png');
   background-size: cover;
   background-position: center;
   opacity: 0.02;
   position: absolute;
-  bottom: -3rem;
-  left: -13.5625rem;
+  bottom:-2rem;
+  left: -2rem;
+  z-index: 0;
 }
 
 /*blog section*/
@@ -901,36 +920,36 @@ top: 100%!important;
   overflow: hidden;
   /*ISSUE: UNTIL SWIPER SOLVED*/
 }
-.blog-box{
+
+.blog-box {
   position: relative;
 }
 
-.blog .swiper-btns-box{
+.blog .swiper-btns-box {
   position: absolute;
   left: 1.5rem;
-  top:50%!important;
-  }
+  top: 50% !important;
+}
 
 .blog-slide {
   width: 100%;
-  height:initial;
+  height: initial;
   box-shadow: 0px 4px 12px #0000000A;
   border: 1px solid #F6F6F6;
   border-radius: 6px;
   padding-bottom: 1.75rem;
   margin-top: 1.75rem;
-  margin-bottom:1.75rem;
+  margin-bottom: 1.75rem;
   position: relative;
-}
-.blog-slide-box {
-
 }
 
 .blog-img {
   width: 100%;
   height: auto;
 }
-
+.blog-img img{
+  width: 100%;
+}
 .blog-text-box {
   width: 100%;
 }
@@ -970,9 +989,9 @@ top: 100%!important;
 
 }
 
-.bottom-footer-loc{
+.bottom-footer-loc {
   padding-top: 3rem;
-  padding-bottom:4rem;
+  padding-bottom: 4rem;
 
 }
 
@@ -980,15 +999,16 @@ top: 100%!important;
   padding-bottom: 1.25rem;
 }
 
-.list-footer li a,.text-box-footer span {
+.list-footer li a,
+.text-box-footer span {
   color: #FAFAFA;
   font: 16px/21px yekanregular;
-  
+
 }
 
 /*ISSUE: I DONT KNOW WHERE 62PX CAME FROM SO I HAD TO DEFINE THE HEIGHT OF LI & UL MANUALLY*/
 .social-media-icons-footer {
- width:10.5rem;
+  width: 10.5rem;
 }
 
 .social-media-icons-footer li {
@@ -1003,28 +1023,20 @@ top: 100%!important;
 
 .bottom-footer {
   width: 100%;
-  height:auto;
+  height: auto;
   background-color: #212121;
 }
-
-/* .text-box-footer {
-  padding-top: 3rem;
-} */
-
 
 .text-box-footer p {
   height: 4rem;
   color: #FAFAFA;
   font: 14px/22px yekanregular;
- }
+}
+
 .text-box-footer a {
   color: #FAFAFA;
   font: 12px/16px yekanregular;
 }
-
-/* .approved-footer {
-  padding-top: 3.4375rem;
-} */
 
 /*ISSUE:  FOR THIS PART THERE SHOULD BE OTHER SOLUTIONS TO CENTERISE THE IMAG IN THE RELATED BOX!!!!!!!!!!!!!!*/
 .bg-trust-footer {
@@ -1041,7 +1053,7 @@ top: 100%!important;
 .bg-trust-footer img {
   position: absolute;
   top: 5%;
-  right: 5%;
+  right: 0;
 }
 
 .text-copyright {
@@ -1055,78 +1067,170 @@ top: 100%!important;
   padding-top: 1rem;
   padding-bottom: 1rem;
 }
+@media (max-width: 992px) {
+.course-box {
+  width: 52%
+}
 
-@media (max-width: 576px) {
-  .menu-extera {
-    flex-direction: column;
-    align-items: start;
-  }
-
-  .search-icon,.box-internship,.text-img-about-us,.img-box-about-us img,.img-box-internship,.intern,.box-document{
-    display: none;
-  }
+}
+@media (max-width: 768px) {
 
   .about-us {
-    display: flex;
-    flex-direction: column;
+    margin: 4rem auto;
   }
 
 
-  .text-box-about-us {
-    margin: 0 auto;
+  .img-box-about-us { /*ISSUE: NOT RESPONSIVE!!!!!!!!*/
+    width: 68%;
+    height: 435px;
+  }
+
+
+  .text-img-about-us {
+    width: 38%;
+    height: 50%;
+    background-color: #9164E8;
+    border-radius: 6px;
+    align-items: center;
 
   }
 
-  .course-box figure img {
+  .text-img-about-us h3 {
+    font: 24px/38px yekanbold;
+    color: #FAFAFA;
+    padding: 36px 25px 36px 26px;
+    /*ISSUE: FIND A BETTER SOLUTION!!!!!!!!*/
+
+  }
+
+  .text-box {
+    width: 80%;
+    height: auto;
+    padding: 2.4rem 0;
+  }
+
+  .introduction {
+    background-position: center;
+  }
+
+  .course-box {
+    width: 52%;
+  }
+
+  .internship {
+    margin: 4rem auto;
+  }
+
+  .internship .text-box {
+    margin-bottom: 2.5rem;
+    margin-top: 2rem;
+  }
+.box-internship {
+  width: 75%;
+}
+  .blog {
+    margin-bottom: 6rem;
+  }
+
+  @media (max-width: 576px) {
+    .menu-extera {
+      flex-direction: column;
+      align-items: start;
+    }
+  
+    .search-icon,
+    .box-internship,
+    .text-img-about-us,
+    .img-box-about-us img,
+    .img-box-internship,
+    .intern,
+    .box-document {
+      display: none;
+    }
+  
+    .about-us {
+      display: flex;
+      flex-direction: column;
+    }
+  
+  
+    .text-box {
+      margin: 0 auto;
+  
+    }
+  .course-box{
+   width: 100%;
+  }
+    .course-box figure img {
+      width: 100%;
+    }
+    .box-document-all {
+  display: none;  }
+    .top-footer-arrange {
+      display: flex;
+      flex-direction: column;
+    }
+  
+    .introduction .text-box {
+      margin-bottom: 2rem;
+    }
+  
+    .courses-title,
+   .text-box {
+      padding-right: 1.5rem;
+      padding-left: 1.5rem;
+    }
+  
+    .internship .text-box,
+    .document .text-box,
+    .text-box-footer,
+    .list-footer-box {
+      padding: 1.5rem 1.5rem;
+    }
+    .at-glance-category {
+      margin: 4rem 23%;
+  }
+    .at-glance-category>.text-box {
+      margin: 10%;
+    }
+  
+    .text-box {
+      width: 100%;
+  
+  }
+  .blog-slide {
     width: 100%;
   }
-  .top-footer-arrange{
-    display: flex;
-    flex-direction: column;
+    .bg-approved-footer {
+      scale: 0.8;
+      margin-right: 0;
+  
+    }
+  
+    .text-box-footer {
+      padding-top: 0;
+  
+    }
+    .text-box span:nth-child(2), .courses-title span, .blog-recent span:nth-child(2) {
+      font: 20px/34px yekanbold;
+      color: #212121;
+      padding-bottom: 1rem;
   }
-.intro-text-box{
-    margin:0 auto;
-}
-.introduction .intro-text-box {
-  margin-bottom: 2rem;
-}
-
-.courses-title,.internship .text-box{
-  padding-right: 1.5rem;;
-}
-.internship .text-box,.document .text-box,.text-box-footer,.list-footer-box {
-  padding: 1.5rem 1.5rem;
-}
-.at-glance-category>.text-box {
-  margin:10%;
-}
-
-.bg-approved-footer {
-  scale:0.8;
-  margin-right:0;
-
-}
-.text-box-footer {
-  padding-top:0;
-
-}
-
-
-
-/* ==========================================================================
+  }
+  /* ==========================================================================
    Helper classes
    ========================================================================== */
 
-/*
+  /*
  * Hide visually and from screen readers
  */
 
-.hidden,
-[hidden] {
-  display: none !important;
-}
+  .hidden,
+  [hidden] {
+    display: none !important;
+  }
 
-/*
+  /*
  * Hide only visually, but have it available for screen readers:
  * https://snook.ca/archives/html_and_css/hiding-content-for-accessibility
  *
@@ -1135,45 +1239,45 @@ top: 100%!important;
  *    https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe
  */
 
-.sr-only {
-  border: 0;
-  clip: rect(0, 0, 0, 0);
-  height: 1px;
-  margin: -1px;
-  overflow: hidden;
-  padding: 0;
-  position: absolute;
-  white-space: nowrap;
-  width: 1px;
-  /* 1 */
-}
+  .sr-only {
+    border: 0;
+    clip: rect(0, 0, 0, 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    /* 1 */
+  }
 
-/*
+  /*
  * Extends the .sr-only class to allow the element
  * to be focusable when navigated to via the keyboard:
  * https://www.drupal.org/node/897638
  */
 
-.sr-only.focusable:active,
-.sr-only.focusable:focus {
-  clip: auto;
-  height: auto;
-  margin: 0;
-  overflow: visible;
-  position: static;
-  white-space: inherit;
-  width: auto;
-}
+  .sr-only.focusable:active,
+  .sr-only.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    white-space: inherit;
+    width: auto;
+  }
 
-/*
+  /*
  * Hide visually and from screen readers, but maintain layout
  */
 
-.invisible {
-  visibility: hidden;
-}
+  .invisible {
+    visibility: hidden;
+  }
 
-/*
+  /*
  * Clearfix: contain floats
  *
  * For modern browsers
@@ -1185,105 +1289,105 @@ top: 100%!important;
  *    `:before` to contain the top-margins of child elements.
  */
 
-.clearfix::before,
-.clearfix::after {
-  content: " ";
-  display: table;
-}
+  .clearfix::before,
+  .clearfix::after {
+    content: " ";
+    display: table;
+  }
 
-.clearfix::after {
-  clear: both;
-}
+  .clearfix::after {
+    clear: both;
+  }
 
-/* ==========================================================================
+  /* ==========================================================================
    EXAMPLE Media Queries for Responsive Design.
    These examples override the primary ('mobile first') styles.
    Modify as content requires.
    ========================================================================== */
 
-@media only screen and (min-width: 35em) {
-  /* Style adjustments for viewports that meet the condition */
-}
+  @media only screen and (min-width: 35em) {
+    /* Style adjustments for viewports that meet the condition */
+  }
 
-@media print,
-(-webkit-min-device-pixel-ratio: 1.25),
-(min-resolution: 1.25dppx),
-(min-resolution: 120dpi) {
-  /* Style adjustments for high resolution devices */
-}
+  @media print,
+  (-webkit-min-device-pixel-ratio: 1.25),
+  (min-resolution: 1.25dppx),
+  (min-resolution: 120dpi) {
+    /* Style adjustments for high resolution devices */
+  }
 
-/* ==========================================================================
+  /* ==========================================================================
    Print styles.
    Inlined to avoid the additional HTTP request:
    https://www.phpied.com/delay-loading-your-print-css/
    ========================================================================== */
 
-@media print {
+  @media print {
 
-  *,
-  *::before,
-  *::after {
-    background: #fff !important;
-    color: #000 !important;
-    /* Black prints faster */
-    box-shadow: none !important;
-    text-shadow: none !important;
-  }
+    *,
+    *::before,
+    *::after {
+      background: #fff !important;
+      color: #000 !important;
+      /* Black prints faster */
+      box-shadow: none !important;
+      text-shadow: none !important;
+    }
 
-  a,
-  a:visited {
-    text-decoration: underline;
-  }
+    a,
+    a:visited {
+      text-decoration: underline;
+    }
 
-  a[href]::after {
-    content: " ("attr(href) ")";
-  }
+    a[href]::after {
+      content: " (" attr(href) ")";
+    }
 
-  abbr[title]::after {
-    content: " ("attr(title) ")";
-  }
+    abbr[title]::after {
+      content: " (" attr(title) ")";
+    }
 
-  /*
+    /*
    * Don't show links that are fragment identifiers,
    * or use the `javascript:` pseudo protocol
    */
-  a[href^="#"]::after,
-  a[href^="javascript:"]::after {
-    content: "";
-  }
+    a[href^="#"]::after,
+    a[href^="javascript:"]::after {
+      content: "";
+    }
 
-  pre {
-    white-space: pre-wrap !important;
-  }
+    pre {
+      white-space: pre-wrap !important;
+    }
 
-  pre,
-  blockquote {
-    border: 1px solid #999;
-    page-break-inside: avoid;
-  }
+    pre,
+    blockquote {
+      border: 1px solid #999;
+      page-break-inside: avoid;
+    }
 
-  /*
+    /*
    * Printing Tables:
    * https://web.archive.org/web/20180815150934/http://css-discuss.incutio.com/wiki/Printing_Tables
    */
-  thead {
-    display: table-header-group;
-  }
+    thead {
+      display: table-header-group;
+    }
 
-  tr,
-  img {
-    page-break-inside: avoid;
-  }
+    tr,
+    img {
+      page-break-inside: avoid;
+    }
 
-  p,
-  h2,
-  h3 {
-    orphans: 3;
-    widows: 3;
-  }
+    p,
+    h2,
+    h3 {
+      orphans: 3;
+      widows: 3;
+    }
 
-  h2,
-  h3 {
-    page-break-after: avoid;
+    h2,
+    h3 {
+      page-break-after: avoid;
+    }
   }
-}
